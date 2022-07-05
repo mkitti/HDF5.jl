@@ -50,6 +50,12 @@ let fn = tempname() * ".h5"
   dat = load(fn; dict=OrderedDict())  # `track_order` is inferred from `OrderedDict`
 
   @test all(keys(dat) .== ["b", "a", "G/z", "G/f"])
+
+  # issue #939
+  h5open(fn, "r"; track_order=true) do io
+    # display(io)
+    @test all(keys(io) .== ["b", "a", "G"])
+  end
 end
 
 let fn = tempname() * ".h5"

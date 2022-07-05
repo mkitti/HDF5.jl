@@ -64,24 +64,30 @@ function h5open(filename::AbstractString, mode::AbstractString = "r";
     end
 end
 
-
 """
-    function h5open(f::Function, args...; swmr=false, pv...)
+    function h5open(f::Function, args...; track_order = false, swmr = false, pv...)
 
-Apply the function f to the result of `h5open(args...; kwargs...)` and close the resulting
-`HDF5.File` upon completion. For example with a `do` block:
+Apply the function f to the result of `h5open(args...; kwargs...)`
+and close the resulting `HDF5.File` upon completion.
+The keyword `track_order` can be used to change the iteration order to `H5_INDEX_CRT_ORDER`.
+For example with a `do` block:
 
     h5open("foo.h5","w") do h5
         h5["foo"]=[1,2,3]
     end
 
 """
-function h5open(f::Function, args...; swmr=false, pv...)
-    file = h5open(args...; swmr=swmr, pv...)
+function h5open(f::Function, args...; track_order::Bool = false, swmr::Bool = false, pv...)
+    if track_order
+        prev = IDX_TYPE[]
+        IDX_TYPE[] = HDF5.API.H5_INDEX_CRT_ORDER  # index (iterate) on creation order
+    end
+    file = h5open(args...; track_order = track_order, swmr = swmr, pv...)
     try
         f(file)
     finally
         close(file)
+        track_order && (IDX_TYPE[] = prev)
     end
 end
 
