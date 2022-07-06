@@ -235,7 +235,7 @@ function Base.keys(attrdict::AttributeDict)
     # faster than iteratively calling h5a_get_name_by_idx
     checkvalid(attrdict.parent)
     keyvec = sizehint!(String[], length(attrdict))
-    API.h5a_iterate(attrdict.parent, IDX_TYPE[], ORDER[]) do _, attr_name, _
+    API.h5a_iterate(attrdict.parent, idx_type(attrdict.parent), order(attrdict.parent)) do _, attr_name, _
         push!(keyvec, unsafe_string(attr_name))
         return false
     end
@@ -285,7 +285,7 @@ Base.length(x::Attributes) = Int(object_info(x.parent).num_attrs)
 function Base.keys(x::Attributes)
     checkvalid(x.parent)
     children = sizehint!(String[], length(x))
-    API.h5a_iterate(x.parent, IDX_TYPE[], ORDER[]) do _, attr_name, _
+    API.h5a_iterate(x.parent, idx_type(x.parent), order(x.parent)) do _, attr_name, _
         push!(children, unsafe_string(attr_name))
         return API.herr_t(0)
     end

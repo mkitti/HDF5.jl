@@ -20,10 +20,9 @@ function fileio_load(
     f::FileIO.File{FileIO.format"HDF5"};
     dict=Dict{String,Any}(), track_order::Union{Nothing,Bool}=nothing, kwargs...
 )
-    out = h5open(FileIO.filename(f), "r"; track_order=_infer_track_order(track_order, dict), kwargs...) do file
+    h5open(FileIO.filename(f), "r"; track_order=_infer_track_order(track_order, dict), kwargs...) do file
         loadtodict!(dict, file)
     end
-    out
 end
 
 # when called with explicitly requested variable names, return each one
