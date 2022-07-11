@@ -916,3 +916,10 @@ function HDF5Context()
        HDF5.StringCreateProperties(),
    )
 end
+
+function Base.copy(x::HDF5Context)
+    # TODO: create context copy using `H5Pcopy` ?
+    HDF5Context()
+end
+
+const CONTEXT = HDF5Context()

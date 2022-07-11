@@ -75,9 +75,9 @@ For example with a `do` block:
     end
 
 """
-function h5open(f::Function, args...; pv...)
+function h5open(f::Function, args...; context = copy(CONTEXT), pv...)
     file = h5open(args...; pv...)
-    task_local_storage(:hdf5_context, CONTEXT) do
+    task_local_storage(:hdf5_context, context) do
         ctx = task_local_storage(:hdf5_context)
         if (track_order = get(pv, :track_order, nothing)) !== nothing
             ctx.file_create.track_order = ctx.group_create.track_order = track_order
