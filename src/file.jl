@@ -42,7 +42,7 @@ function h5open(filename::AbstractString, mode::AbstractString, fapl::FileAccess
         end
         fid = API.h5f_open(filename, flag, fapl)
     end
-    File(fid, filename, fcpl)
+    File(fid, filename)
 end
 
 
@@ -59,7 +59,7 @@ function h5open(filename::AbstractString, mode::AbstractString = "r";
         return h5open(filename, mode, fapl, fcpl; swmr=swmr)
     finally
         close(fapl)
-        # close(fcpl)  # FIXME: need to remain valid in read mode
+        close(fcpl)
     end
 end
 
@@ -77,10 +77,18 @@ For example with a `do` block:
 """
 function h5open(f::Function, args...; pv...)
     file = h5open(args...; pv...)
-    try
-        f(file)
-    finally
-        close(file)
+    task_local_storage(:hdf5_context, CONTEXT) do
+        ctx = task_local_storage(:hdf5_context)
+        if (track_order = get(pv, :track_order, nothing)) !== nothing
+            ctx.file_create.track_order = ctx.group_create.track_order = track_order
+        end
+        try
+            f(file)
+        finally
+            close(file)
+            close(ctx.file_create)
+            close(ctx.group_create)
+        end
     end
 end
 

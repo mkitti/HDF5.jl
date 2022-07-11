@@ -38,10 +38,9 @@ end
 mutable struct File <: H5DataStore
     id::API.hid_t
     filename::String
-    fcpl::FileCreateProperties
 
-    function File(id, filename, fcpl::FileCreateProperties=FileCreateProperties(), toclose::Bool=true)
-        f = new(id, filename, fcpl)
+    function File(id, filename, toclose::Bool=true)
+        f = new(id, filename)
         if toclose
             finalizer(close, f)
         end
@@ -54,10 +53,9 @@ Base.unsafe_convert(::Type{API.hid_t}, f::File) = f.id
 mutable struct Group <: H5DataStore
     id::API.hid_t
     file::File         # the parent file
-    gcpl::GroupCreateProperties
 
-    function Group(id, file, gcpl::GroupCreateProperties=GroupCreateProperties())
-        g = new(id, file, gcpl)
+    function Group(id, file)
+        g = new(id, file)
         finalizer(close, g)
         g
     end

@@ -19,22 +19,11 @@ function Base.close(obj::Union{Group,Dataset})
     nothing
 end
 
-inherit_gcpl(parent) = GroupCreateProperties()
-inherit_gcpl(parent::Group) = isvalid(parent.gcpl) ? parent.gcpl : GroupCreateProperties()
-function inherit_gcpl(parent::File)
-    if isvalid(parent.fcpl)
-        # FIXME: propagate ∩(GroupCreateProperties, FileCreateProperties) properties
-        GroupCreateProperties(track_order = parent.fcpl.track_order)
-    else
-        GroupCreateProperties()
-    end
-end
-
 # Object (group, named datatype, or dataset) open
 function h5object(obj_id::API.hid_t, parent)
     obj_type = API.h5i_get_type(obj_id)
     obj = if obj_type == API.H5I_GROUP
-        Group(obj_id, file(parent), inherit_gcpl(parent))
+        Group(obj_id, file(parent))
     elseif obj_type == API.H5I_DATATYPE
         Datatype(obj_id, file(parent))
     elseif obj_type == API.H5I_DATASET

@@ -36,13 +36,11 @@ end
 
 let fn = tempname() * ".h5"
   h5open(fn, "w"; track_order=true) do io
-    fcpl = HDF5.get_create_properties(io)
-    @test fcpl.track_order
+    @test HDF5.get_create_properties(io).track_order
     io["b"] = 1
     io["a"] = 2
     g = create_group(io, "G"; track_order=true)
-    gcpl = HDF5.get_create_properties(io["G"])
-    @test gcpl.track_order
+    @test HDF5.get_create_properties(io["G"]).track_order
     write(g, "z", 3)
     write(g, "f", 4)
   end
