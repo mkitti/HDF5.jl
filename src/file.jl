@@ -42,7 +42,7 @@ function h5open(filename::AbstractString, mode::AbstractString, fapl::FileAccess
         end
         fid = API.h5f_open(filename, flag, fapl)
     end
-    File(fid, filename)
+    return File(fid, filename)
 end
 
 
