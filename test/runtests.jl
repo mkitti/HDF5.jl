@@ -6,6 +6,9 @@ Pkg.develop(PackageSpec(path=joinpath(filter_path, "H5Zblosc")))
 Pkg.develop(PackageSpec(path=joinpath(filter_path, "H5Zbzip2")))
 Pkg.develop(PackageSpec(path=joinpath(filter_path, "H5Zlz4")))
 Pkg.develop(PackageSpec(path=joinpath(filter_path, "H5Zzstd")))
+@static if VERSION >= v"1.6"
+    Pkg.develop(PackageSpec(path=joinpath(filter_path, "H5Zbitshuffle")))
+end
 
 @info "libhdf5 v$(HDF5.API.h5_get_libversion())"
 
@@ -58,6 +61,8 @@ include("fileio.jl")
 include("nonallocating.jl")
 @debug "filter test utils"
 include("filters/FilterTestUtils.jl")
+@debug "objects"
+include("objects.jl")
 
 using MPI
 if HDF5.has_parallel()
