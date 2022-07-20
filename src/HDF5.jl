@@ -42,6 +42,7 @@ h5doc(name) = "[`$name`](https://portal.hdfgroup.org/display/HDF5/$(name))"
 
 include("api/api.jl")
 include("properties.jl")
+include("context.jl")
 include("types.jl")
 include("file.jl")
 include("objects.jl")
@@ -164,11 +165,6 @@ include("api_midlevel.jl")
 const libversion = API.h5_get_libversion()
 
 ### Property manipulation ###
-function get_context_property(name::Symbol)
-    local_context = get(task_local_storage(), :hdf5_context, CONTEXT)
-    property = getfield(local_context, name)
-    isvalid(property) ? property : nothing
-end
 get_access_properties(d::Dataset)   = something(get_context_property(:dataset_access), DatasetAccessProperties(API.h5d_get_access_plist(d)))
 get_access_properties(f::File)      = something(get_context_property(:file_access), FileAccessProperties(API.h5f_get_access_plist(f)))
 get_create_properties(d::Dataset)   = something(get_context_property(:dataset_create), DatasetCreateProperties(API.h5d_get_create_plist(d)))
