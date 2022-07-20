@@ -56,32 +56,39 @@ function h5open(filename::AbstractString, mode::AbstractString = "r";
     try
         pv = setproperties!(fapl, fcpl; pv...)
         isempty(pv) || error("invalid keyword options $pv")
-        file = h5open(filename, mode, fapl, fcpl; swmr=swmr)
-        return file
+        return h5open(filename, mode, fapl, fcpl; swmr=swmr)
     finally
         close(fapl)
         close(fcpl)
     end
 end
 
-
 """
-    function h5open(f::Function, args...; swmr=false, pv...)
+    function h5open(f::Function, args...; pv...)
 
 Apply the function f to the result of `h5open(args...; kwargs...)` and close the resulting
-`HDF5.File` upon completion. For example with a `do` block:
+`HDF5.File` upon completion.
+For example with a `do` block:
 
     h5open("foo.h5","w") do h5
         h5["foo"]=[1,2,3]
     end
 
 """
-function h5open(f::Function, args...; swmr=false, pv...)
-    file = h5open(args...; swmr=swmr, pv...)
-    try
-        f(file)
-    finally
-        close(file)
+function h5open(f::Function, args...; context = copy(CONTEXT), pv...)
+    file = h5open(args...; pv...)
+    task_local_storage(:hdf5_context, context) do
+        ctx = task_local_storage(:hdf5_context)
+        if (track_order = get(pv, :track_order, nothing)) !== nothing
+            ctx.file_create.track_order = ctx.group_create.track_order = track_order
+        end
+        try
+            f(file)
+        finally
+            close(file)
+            close(ctx.file_create)
+            close(ctx.group_create)
+        end
     end
 end
 

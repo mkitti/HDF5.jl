@@ -48,7 +48,7 @@ function Base.iterate(parent::Union{File,Group}, iter = (1,nothing))
     n, prev_obj = iter
     prev_obj ≢ nothing && close(prev_obj)
     n > length(parent) && return nothing
-    obj = h5object(API.h5o_open_by_idx(checkvalid(parent), ".", IDX_TYPE[], ORDER[], n-1, API.H5P_DEFAULT), parent)
+    obj = h5object(API.h5o_open_by_idx(checkvalid(parent), ".", idx_type(parent), order(parent), n-1, API.H5P_DEFAULT), parent)
     return (obj, (n+1,obj))
 end
 
@@ -99,7 +99,7 @@ end
 function Base.keys(x::Union{Group,File})
     checkvalid(x)
     children = sizehint!(String[], length(x))
-    API.h5l_iterate(x, IDX_TYPE[], ORDER[]) do _, name, _
+    API.h5l_iterate(x, idx_type(x), order(x)) do _, name, _
         push!(children, unsafe_string(name))
         return API.herr_t(0)
     end

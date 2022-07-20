@@ -138,3 +138,12 @@ const ScalarType = Union{BitsType,Reference}
 
 # Define an H5O Object type
 const Object = Union{Group,Dataset,Datatype}
+
+idx_type(obj::Union{File,Group}) =
+    get_track_order(get_create_context(obj)) ?
+        API.H5_INDEX_CRT_ORDER :
+        API.H5_INDEX_NAME
+idx_type(obj::Any) = API.H5_INDEX_NAME
+
+# TODO: implement alternative iteration order ?
+order(obj::Any) = API.H5_ITER_INC

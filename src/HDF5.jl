@@ -41,11 +41,8 @@ Filters, Drivers
 h5doc(name) = "[`$name`](https://portal.hdfgroup.org/display/HDF5/$(name))"
 
 include("api/api.jl")
-
-const IDX_TYPE = Ref(API.H5_INDEX_NAME)
-const ORDER = Ref(API.H5_ITER_INC)
-
 include("properties.jl")
+include("context.jl")
 include("types.jl")
 include("file.jl")
 include("objects.jl")
@@ -158,14 +155,12 @@ function Base.setindex!(parent::Union{File,Group}, val, path::Union{AbstractStri
 end
 
 
-# end of high-level interface
 
+# end of high-level interface
 
 include("api_midlevel.jl")
 
-
 #API.h5s_get_simple_extent_ndims(space_id::API.hid_t) = API.h5s_get_simple_extent_ndims(space_id, C_NULL, C_NULL)
-
 
 # Functions that require special handling
 
