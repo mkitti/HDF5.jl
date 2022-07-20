@@ -22,16 +22,10 @@ end
 # Object (group, named datatype, or dataset) open
 function h5object(obj_id::API.hid_t, parent)
     obj_type = API.h5i_get_type(obj_id)
-    obj = if obj_type == API.H5I_GROUP
-        Group(obj_id, file(parent))
-    elseif obj_type == API.H5I_DATATYPE
-        Datatype(obj_id, file(parent))
-    elseif obj_type == API.H5I_DATASET
-        Dataset(obj_id, file(parent))
-    else
-        error("Invalid object type for path ", path)
-    end
-    obj
+    obj_type == API.H5I_GROUP ? Group(obj_id, file(parent)) :
+    obj_type == API.H5I_DATATYPE ? Datatype(obj_id, file(parent)) :
+    obj_type == API.H5I_DATASET ? Dataset(obj_id, file(parent)) :
+    error("Invalid object type for path ", path)
 end
 open_object(parent, path::AbstractString) = h5object(API.h5o_open(checkvalid(parent), path, API.H5P_DEFAULT), parent)
 function gettype(parent, path::AbstractString)
