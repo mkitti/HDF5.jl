@@ -165,12 +165,12 @@ include("api_midlevel.jl")
 const libversion = API.h5_get_libversion()
 
 ### Property manipulation ###
-get_access_properties(d::Dataset)   = something(get_context_property(:dataset_access), DatasetAccessProperties(API.h5d_get_access_plist(d)))
-get_access_properties(f::File)      = something(get_context_property(:file_access), FileAccessProperties(API.h5f_get_access_plist(f)))
-get_create_properties(d::Dataset)   = something(get_context_property(:dataset_create), DatasetCreateProperties(API.h5d_get_create_plist(d)))
-get_create_properties(g::Group)     = something(get_context_property(:group_create), GroupCreateProperties(API.h5g_get_create_plist(g)))
-get_create_properties(f::File)      = something(get_context_property(:file_create), FileCreateProperties(API.h5f_get_create_plist(f)))
-get_create_properties(a::Attribute) = something(get_context_property(:attribute_create), AttributeCreateProperties(API.h5a_get_create_plist(a)))
+get_access_properties(d::Dataset)   = DatasetAccessProperties(API.h5d_get_access_plist(d))
+get_access_properties(f::File)      = FileAccessProperties(API.h5f_get_access_plist(f))
+get_create_properties(d::Dataset)   = DatasetCreateProperties(API.h5d_get_create_plist(d))
+get_create_properties(g::Group)     = GroupCreateProperties(API.h5g_get_create_plist(g))
+get_create_properties(f::File)      = FileCreateProperties(API.h5f_get_create_plist(f))
+get_create_properties(a::Attribute) = AttributeCreateProperties(API.h5a_get_create_plist(a))
 
 
 const HAS_PARALLEL = Ref(false)
