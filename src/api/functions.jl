@@ -16,7 +16,7 @@ _libhdf5_build_ver = let
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5']/member[name='H5close']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5.html#ga8a9fe81dcf66972ed75ea481e7750574).
 """
 function h5_close()
     lock(liblock)
@@ -34,7 +34,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5']/member[name='H5dont_atexit']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5.html#ga7f80eb63b5e78812b9d0d50ac46764e8).
 """
 function h5_dont_atexit()
     lock(liblock)
@@ -52,7 +52,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5']/member[name='H5free_memory']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5.html#ga71872bf6445cba956da86d4762b662cf).
 """
 function h5_free_memory(buf)
     lock(liblock)
@@ -70,7 +70,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5']/member[name='H5garbage_collect']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5.html#gae511943bcb837a52a012a3a5dd7b90ef).
 """
 function h5_garbage_collect()
     lock(liblock)
@@ -88,7 +88,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5']/member[name='H5get_libversion']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5.html#gaf87da966fdf896ec7bca794e21d4ab0a).
 """
 function h5_get_libversion(majnum, minnum, relnum)
     lock(liblock)
@@ -106,7 +106,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5']/member[name='H5is_library_threadsafe']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5.html#ga70bfde4acd009cdd7bcd2f54c594e28a).
 """
 function h5_is_library_threadsafe(is_ts)
     lock(liblock)
@@ -124,7 +124,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5']/member[name='H5open']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5.html#ga27fa33dc262dda95c5aa8df533837480).
 """
 function h5_open()
     lock(liblock)
@@ -142,7 +142,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5']/member[name='H5set_free_list_limits']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5.html#gaa3f78b24b8a1ff4168db2b7ddca21545).
 """
 function h5_set_free_list_limits(reg_global_lim, reg_list_lim, arr_global_lim, arr_list_lim, blk_global_lim, blk_list_lim)
     lock(liblock)
@@ -160,7 +160,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5A']/member[name='H5Aclose']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_a.html#gaef4394b661e2c930879e9868e122bdda).
 """
 function h5a_close(id)
     lock(liblock)
@@ -178,7 +178,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5A']/member[name='H5Acreate2']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_a.html#ga4f4e5248c09f689633079ed8afc0b308).
 """
 function h5a_create(loc_id, attr_name, type_id, space_id, acpl_id, aapl_id)
     lock(liblock)
@@ -196,7 +196,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5A']/member[name='H5Acreate_by_name']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_a.html#ga004160c28e281455ec48aa7fe557ef8a).
 """
 function h5a_create_by_name(loc_id, obj_name, attr_name, type_id, space_id, acpl_id, aapl_id, lapl_id)
     lock(liblock)
@@ -214,7 +214,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5A']/member[name='H5Adelete']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_a.html#gada9fa3d6db52329f1fd55662de6ff6ba).
 """
 function h5a_delete(loc_id, attr_name)
     lock(liblock)
@@ -232,7 +232,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5A']/member[name='H5Adelete_by_idx']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_a.html#ga06711a4e77ff8ab49e427010fd38ac9e).
 """
 function h5a_delete_by_idx(loc_id, obj_name, idx_type, order, n, lapl_id)
     lock(liblock)
@@ -250,7 +250,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5A']/member[name='H5Adelete_by_name']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_a.html#gacbf689308f851428dd641b64f5f94feb).
 """
 function h5a_delete_by_name(loc_id, obj_name, attr_name, lapl_id)
     lock(liblock)
@@ -268,7 +268,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5A']/member[name='H5Aexists']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_a.html#ga293b5be270d90cd5e47f782ca9aec80b).
 """
 function h5a_exists(obj_id, attr_name)
     lock(liblock)
@@ -286,7 +286,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5A']/member[name='H5Aexists_by_name']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_a.html#gaa1d2305651a4524f6aa0f8b56eec1a37).
 """
 function h5a_exists_by_name(loc_id, obj_name, attr_name, lapl_id)
     lock(liblock)
@@ -304,7 +304,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5A']/member[name='H5Aget_create_plist']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_a.html#ga0f6b545850bd21f128904eff51df226d).
 """
 function h5a_get_create_plist(attr_id)
     lock(liblock)
@@ -322,7 +322,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5A']/member[name='H5Aget_name']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_a.html#ga05e195aabab8c623b1c52009aeb99674).
 """
 function h5a_get_name(attr_id, buf_size, buf)
     lock(liblock)
@@ -340,7 +340,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5A']/member[name='H5Aget_name_by_idx']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_a.html#ga4c552b2db32371f8ea20d87475313fb6).
 """
 function h5a_get_name_by_idx(loc_id, obj_name, index_type, order, idx, name, size, lapl_id)
     lock(liblock)
@@ -358,7 +358,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5A']/member[name='H5Aget_space']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_a.html#ga9e21e544119d03f9342530b45a71d74d).
 """
 function h5a_get_space(attr_id)
     lock(liblock)
@@ -376,7 +376,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5A']/member[name='H5Aget_type']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_a.html#ga0b070b714b2e535df2e1cb3005026a44).
 """
 function h5a_get_type(attr_id)
     lock(liblock)
@@ -394,7 +394,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5A']/member[name='H5Aiterate2']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_a.html#ga9315a22b60468b6e996559b1b8a77251).
 """
 function h5a_iterate(obj_id, idx_type, order, n, op, op_data)
     lock(liblock)
@@ -412,7 +412,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5A']/member[name='H5Aopen']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_a.html#ga59863b205b6d93b2145f0fbca49656f7).
 """
 function h5a_open(obj_id, attr_name, aapl_id)
     lock(liblock)
@@ -430,7 +430,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5A']/member[name='H5Aopen_by_idx']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_a.html#gab1451cdff4f77dcf9feaee83c8179b2d).
 """
 function h5a_open_by_idx(obj_id, pathname, idx_type, order, n, aapl_id, lapl_id)
     lock(liblock)
@@ -448,7 +448,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5A']/member[name='H5Aread']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_a.html#gaacb27a997f7c98e8a833d0fd63b58f1c).
 """
 function h5a_read(attr_id, mem_type_id, buf)
     lock(liblock)
@@ -466,7 +466,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5A']/member[name='H5Arename']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_a.html#ga490dcd6db246c1fda7295badfce28203).
 """
 function h5a_rename(loc_id, old_attr_name, new_attr_name)
     lock(liblock)
@@ -484,7 +484,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5A']/member[name='H5Awrite']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_a.html#gab70871e205d57450c83efd9912be2b5c).
 """
 function h5a_write(attr_hid, mem_type_id, buf)
     lock(liblock)
@@ -502,7 +502,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dclose']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#gae47c3f38db49db127faf221624c30609).
 """
 function h5d_close(dataset_id)
     lock(liblock)
@@ -520,7 +520,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dcreate2']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#gabf62045119f4e9c512d87d77f2f992df).
 """
 function h5d_create(loc_id, pathname, dtype_id, space_id, lcpl_id, dcpl_id, dapl_id)
     lock(liblock)
@@ -538,7 +538,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dcreate_anon']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#ga15a77e82383d821fee8ecbf9ab8408cb).
 """
 function h5d_create_anon(loc_id, type_id, space_id, dcpl_id, dapl_id)
     lock(liblock)
@@ -556,7 +556,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dextend']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#gac4c0ff57977b1f39c1055296e39cbe91).
 """
 function h5d_extend(dataset_id, size)
     lock(liblock)
@@ -574,7 +574,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dfill']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#ga8d4a57e2b2b8c95cfecf6f75bdaa8343).
 """
 function h5d_fill(fill, fill_type_id, buf, buf_type_id, space_id)
     lock(liblock)
@@ -592,7 +592,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dflush']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#ga4a2175a62baa1e35ad2467bb1fdff1f7).
 """
 function h5d_flush(dataset_id)
     lock(liblock)
@@ -610,7 +610,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dgather']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#ga1f6a428a8234d7c2ccba7da4742d79be).
 """
 function h5d_gather(src_space_id, src_buf, type_id, dst_buf_size, dst_buf, op, op_data)
     lock(liblock)
@@ -628,7 +628,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dget_access_plist']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#ga252c0ddac7a7817bd757190e7398353b).
 """
 function h5d_get_access_plist(dataset_id)
     lock(liblock)
@@ -646,7 +646,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dget_chunk_info']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#gaccff213d3e0765b86f66d08dd9959807).
 """
 function h5d_get_chunk_info(dataset_id, fspace_id, index, offset, filter_mask, addr, size)
     lock(liblock)
@@ -665,7 +665,7 @@ end
 
     # External links
 
-    - [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dget_chunk_info_by_coord']).
+    - [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#ga408a49c6ec59c5b65ce4c791f8d26cb0).
     """
     function h5d_get_chunk_info_by_coord(dataset_id, offset, filter_mask, addr, size)
         lock(liblock)
@@ -684,7 +684,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dget_chunk_storage_size']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#gaaeea958861de082db9051fc4bf215234).
 """
 function h5d_get_chunk_storage_size(dataset_id, offset, chunk_nbytes)
     lock(liblock)
@@ -702,7 +702,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dget_create_plist']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#ga8848f14f4aba8e6160c3d8bb7f1be163).
 """
 function h5d_get_create_plist(dataset_id)
     lock(liblock)
@@ -721,7 +721,7 @@ end
 
     # External links
 
-    - [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dget_num_chunks']).
+    - [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#ga8e15897dcc5799d6c09806644b492d7a).
     """
     function h5d_get_num_chunks(dataset_id, fspace_id, nchunks)
         lock(liblock)
@@ -740,7 +740,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dget_offset']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#ga70ce7ab523b06c6c6a93fb28e916c2b3).
 """
 function h5d_get_offset(dataset_id)
     lock(liblock)
@@ -758,7 +758,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dget_space']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#gad42a46be153d895d8c28a11ebf5a0d0a).
 """
 function h5d_get_space(dataset_id)
     lock(liblock)
@@ -776,7 +776,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dget_space_status']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#ga7639ef5c12cb906c71670ce73b856a4c).
 """
 function h5d_get_space_status(dataset_id, status)
     lock(liblock)
@@ -794,7 +794,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dget_storage_size']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#gafb249479a493e80891f0c7f5d8a91b00).
 """
 function h5d_get_storage_size(dataset_id)
     lock(liblock)
@@ -812,7 +812,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dget_type']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#ga7cd04b8332e8a0939b9973fbc500cadb).
 """
 function h5d_get_type(dataset_id)
     lock(liblock)
@@ -830,7 +830,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Diterate']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#ga71421c684884ab49765748720fe938db).
 """
 function h5d_iterate(buf, type_id, space_id, operator, operator_data)
     lock(liblock)
@@ -848,7 +848,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dopen2']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#ga04198c4cf0b849ed3a8921f6c7169ee2).
 """
 function h5d_open(loc_id, pathname, dapl_id)
     lock(liblock)
@@ -866,7 +866,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dread']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#ga8287d5a7be7b8e55ffeff68f7d26811c).
 """
 function h5d_read(dataset_id, mem_type_id, mem_space_id, file_space_id, xfer_plist_id, buf)
     lock(liblock)
@@ -884,7 +884,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dread_chunk']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#gac1092a63b718ec949d6539590a914b60).
 """
 function h5d_read_chunk(dset, dxpl_id, offset, filters, buf)
     lock(liblock)
@@ -902,7 +902,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Drefresh']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#ga3c1ea7e5db3f62d9cf03dd62d1fb08da).
 """
 function h5d_refresh(dataset_id)
     lock(liblock)
@@ -920,7 +920,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dscatter']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#ga3525b15235ba1fd415f988899e48dc5c).
 """
 function h5d_scatter(op, op_data, type_id, dst_space_id, dst_buf)
     lock(liblock)
@@ -938,7 +938,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dset_extent']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#gad31e1e0129f4520c531ce524de2a056f).
 """
 function h5d_set_extent(dataset_id, new_dims)
     lock(liblock)
@@ -956,7 +956,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dvlen_get_buf_size']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#ga0e97bbd8a8ee4a8b5b78ccce8547ce76).
 """
 function h5d_vlen_get_buf_size(dset_id, type_id, space_id, buf)
     lock(liblock)
@@ -974,7 +974,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dvlen_reclaim']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#ga222a2fd93868e2524b2e42c3c6146119).
 """
 function h5d_vlen_reclaim(type_id, space_id, plist_id, buf)
     lock(liblock)
@@ -992,7 +992,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dwrite']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#ga98f44998b67587662af8b0d8a0a75906).
 """
 function h5d_write(dataset_id, mem_type_id, mem_space_id, file_space_id, xfer_plist_id, buf)
     lock(liblock)
@@ -1010,7 +1010,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5D']/member[name='H5Dwrite_chunk']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d.html#ga416ccd200929b11386a10e9024977109).
 """
 function h5d_write_chunk(dset_id, dxpl_id, filter_mask, offset, bufsize, buf)
     lock(liblock)
@@ -1028,7 +1028,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5E']/member[name='H5Eget_auto2']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_e.html#ga2eda33cbadd9be5bfddbaa91e863c936).
 """
 function h5e_get_auto(estack_id, func, client_data)
     lock(liblock)
@@ -1046,7 +1046,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5E']/member[name='H5Eset_auto2']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_e.html#gaf0d6b18cd5160517fe5165b9a8443c69).
 """
 function h5e_set_auto(estack_id, func, client_data)
     lock(liblock)
@@ -1064,7 +1064,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5E']/member[name='H5Eget_current_stack']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_e.html#gac66c0955a6d821a472a3a408cdc95ae6).
 """
 function h5e_get_current_stack()
     lock(liblock)
@@ -1082,7 +1082,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5E']/member[name='H5Eget_msg']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_e.html#ga64714effca13c23c4f95529256621fa0).
 """
 function h5e_get_msg(mesg_id, mesg_type, mesg, len)
     lock(liblock)
@@ -1100,7 +1100,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5E']/member[name='H5Eget_num']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_e.html#ga5c42673e2059c385a95ce3c597e0756d).
 """
 function h5e_get_num(estack_id)
     lock(liblock)
@@ -1118,7 +1118,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5E']/member[name='H5Eclose_stack']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_e.html#ga41c2ed13fd6aac6e413fe7383b9090fa).
 """
 function h5e_close_stack(stack_id)
     lock(liblock)
@@ -1136,7 +1136,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5E']/member[name='H5Ewalk2']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_e.html#ga4ecc0f6a1ea5bb821373a5a7b8070655).
 """
 function h5e_walk(stack_id, direction, op, op_data)
     lock(liblock)
@@ -1154,7 +1154,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fclear_elink_file_cache']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#gafcc153d8606829d4401e93305e5246d7).
 """
 function h5f_clear_elink_file_cache(file_id)
     lock(liblock)
@@ -1172,7 +1172,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fclose']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#gac55cd91d80822e4f8c2a7f04ea71b124).
 """
 function h5f_close(file_id)
     lock(liblock)
@@ -1190,7 +1190,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fcreate']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#gae64b51ee9ac0781bc4ccc599d98387f4).
 """
 function h5f_create(pathname, flags, fcpl_id, fapl_id)
     lock(liblock)
@@ -1208,7 +1208,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fdelete']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#ga2e8b5e19b343123e8ab21442f9169a62).
 """
 function h5f_delete(filename, fapl_id)
     lock(liblock)
@@ -1226,7 +1226,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fflush']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#gae686870f0a276c4d06bbc667b2c24124).
 """
 function h5f_flush(object_id, scope)
     lock(liblock)
@@ -1244,7 +1244,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fformat_convert']).
+- []().
 """
 function h5f_format_convert(fid)
     lock(liblock)
@@ -1262,7 +1262,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fget_access_plist']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#ga359585c49f82f5199178777b39e780f4).
 """
 function h5f_get_access_plist(file_id)
     lock(liblock)
@@ -1280,7 +1280,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fget_create_plist']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#ga2f823a9e929b00b06a6be80619a61778).
 """
 function h5f_get_create_plist(file_id)
     lock(liblock)
@@ -1298,7 +1298,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fget_dset_no_attrs_hint']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#gacbf3ba8b36750c42b49740567a9732c4).
 """
 function h5f_get_dset_no_attrs_hint(file_id, minimize)
     lock(liblock)
@@ -1316,7 +1316,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fget_eoa']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#ga4c18bddafc652203944d889a602bd53f).
 """
 function h5f_get_eoa(file_id, eoa)
     lock(liblock)
@@ -1334,7 +1334,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fget_file_image']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#gadc53f4e76b1199cb5d2a8cb7fbb114ad).
 """
 function h5f_get_file_image(file_id, buf_ptr, buf_len)
     lock(liblock)
@@ -1352,7 +1352,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fget_fileno']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#ga402205688af065ab5db0fe20417d5484).
 """
 function h5f_get_fileno(file_id, fileno)
     lock(liblock)
@@ -1370,7 +1370,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fget_filesize']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#ga515426821321c261a825b4e4a3f576fe).
 """
 function h5f_get_filesize(file_id, size)
     lock(liblock)
@@ -1388,7 +1388,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fget_free_sections']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#gab9cbf1a45f9dcda34b43f985b7848434).
 """
 function h5f_get_free_sections(file_id, type, nsects, sect_info)
     lock(liblock)
@@ -1406,7 +1406,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fget_freespace']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#ga3ef2673183567543346668a8f1eca2e9).
 """
 function h5f_get_freespace(file_id)
     lock(liblock)
@@ -1424,7 +1424,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fget_intent']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#ga466179d7783d256329c2e3110055a16c).
 """
 function h5f_get_intent(file_id, intent)
     lock(liblock)
@@ -1442,7 +1442,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fget_info2']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#gaced8c09c1559636a9c3f33dff3f4520e).
 """
 function h5f_get_info(obj_id, file_info)
     lock(liblock)
@@ -1460,7 +1460,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fget_mdc_config']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___m_d_c.html#gaa67f127242d4aaf244ae8ac4a1fe6a59).
 """
 function h5f_get_mdc_config(file_id, config_ptr)
     lock(liblock)
@@ -1478,7 +1478,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fget_mdc_hit_rate']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___m_d_c.html#gabea066c3fd924d2cf868ecee66a7c41f).
 """
 function h5f_get_mdc_hit_rate(file_id, hit_rate_ptr)
     lock(liblock)
@@ -1496,7 +1496,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fget_mdc_image_info']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___m_d_c.html#ga7b37da15ff80c4aa5c275649f1f45b0a).
 """
 function h5f_get_mdc_image_info(file_id, image_addr, image_size)
     lock(liblock)
@@ -1514,7 +1514,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fget_mdc_logging_status']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___m_d_c.html#ga998ebdc7b5190cf3d0fdf2fbe71e9780).
 """
 function h5f_get_mdc_logging_status(file_id, is_enabled, is_currently_logging)
     lock(liblock)
@@ -1532,7 +1532,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fget_mdc_size']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___m_d_c.html#gacda6cbd60d3c50b59f801eba4e5a335f).
 """
 function h5f_get_mdc_size(file_id, max_size_ptr, min_clean_size_ptr, cur_size_ptr, cur_num_entries_ptr)
     lock(liblock)
@@ -1550,7 +1550,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fget_metadata_read_retry_info']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___s_w_m_r.html#gaa80bd62f19993e414e383db7d1623e5f).
 """
 function h5f_get_metadata_read_retry_info(file_id, info)
     lock(liblock)
@@ -1568,7 +1568,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fget_mpi_atomicity']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_h5_f.html#ga849316b77788799fecb321a87d987ade).
 """
 function h5f_get_mpi_atomicity(file_id, flag)
     lock(liblock)
@@ -1586,7 +1586,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fget_name']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#ga0ed43dbe476a160b73f55127c7db797c).
 """
 function h5f_get_name(obj_id, buf, buf_size)
     lock(liblock)
@@ -1604,7 +1604,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fget_obj_count']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#gadcdae0aca7c88064db0d32de7f1e31f2).
 """
 function h5f_get_obj_count(file_id, types)
     lock(liblock)
@@ -1622,7 +1622,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fget_obj_ids']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#ga35e72579bd07433162b80ddc0bd0c5b1).
 """
 function h5f_get_obj_ids(file_id, types, max_objs, obj_id_list)
     lock(liblock)
@@ -1640,7 +1640,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fget_page_buffering_stats']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#ga0663defe0143631f4292267c21e94202).
 """
 function h5f_get_page_buffering_stats(file_id, accesses, hits, misses, evictions, bypasses)
     lock(liblock)
@@ -1658,7 +1658,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fget_vfd_handle']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#gae4020a66fb8da0586e3b74c81ffccea4).
 """
 function h5f_get_vfd_handle(file_id, fapl_id, file_handle)
     lock(liblock)
@@ -1676,7 +1676,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fincrement_filesize']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#gadbe82c1f6e16c21062fabd20b0ffccd4).
 """
 function h5f_increment_filesize(file_id, increment)
     lock(liblock)
@@ -1694,7 +1694,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fis_accessible']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#ga584471c3b98453b9b04a4bf9af847442).
 """
 function h5f_is_accessible(container_name, fapl_id)
     lock(liblock)
@@ -1712,7 +1712,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fis_hdf5']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#ga6055c2ea3438bd4aaf221eba66843225).
 """
 function h5f_is_hdf5(pathname)
     lock(liblock)
@@ -1730,7 +1730,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fmount']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#ga7c4865fd36ee25d839725252150bb53b).
 """
 function h5f_mount(loc, name, child, plist)
     lock(liblock)
@@ -1748,7 +1748,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fopen']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#gaa3f4f877b9bb591f3880423ed2bf44bc).
 """
 function h5f_open(pathname, flags, fapl_id)
     lock(liblock)
@@ -1766,7 +1766,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Freopen']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#ga3f213eb05c5419d63ba168c30036e47b).
 """
 function h5f_reopen(file_id)
     lock(liblock)
@@ -1784,7 +1784,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Freset_mdc_hit_rate_stats']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___m_d_c.html#ga6708886c2bb8740327d9078d7840197f).
 """
 function h5f_reset_mdc_hit_rate_stats(file_id)
     lock(liblock)
@@ -1802,7 +1802,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Freset_page_buffering_stats']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#ga7ef1c0aab9a7a9112a8d0a788ec8696c).
 """
 function h5f_reset_page_buffering_stats(file_id)
     lock(liblock)
@@ -1820,7 +1820,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fset_dset_no_attrs_hint']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#gafc0166070f920f037e6b1a5c66e5464c).
 """
 function h5f_set_dset_no_attrs_hint(file_id, minimize)
     lock(liblock)
@@ -1838,7 +1838,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fset_libver_bounds']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#ga4b833c33fe2e141a26b6f2ad559d3610).
 """
 function h5f_set_libver_bounds(file_id, low, high)
     lock(liblock)
@@ -1856,7 +1856,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fset_mdc_config']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___m_d_c.html#ga81bc06be69131484eb04d01511b9c8f8).
 """
 function h5f_set_mdc_config(file_id, config_ptr)
     lock(liblock)
@@ -1874,7 +1874,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fset_mpi_atomicity']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_h5_f.html#ga087dbbf37cb5c451ae8a6f66b227f0fc).
 """
 function h5f_set_mpi_atomicity(file_id, flag)
     lock(liblock)
@@ -1892,7 +1892,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fstart_mdc_logging']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___m_d_c.html#ga378fb5863071278b47070cf205f53e67).
 """
 function h5f_start_mdc_logging(file_id)
     lock(liblock)
@@ -1910,7 +1910,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fstart_swmr_write']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___s_w_m_r.html#ga159be34fbe7e4a959589310ef0196dfe).
 """
 function h5f_start_swmr_write(id)
     lock(liblock)
@@ -1928,7 +1928,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Fstop_mdc_logging']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___m_d_c.html#ga78627b23010f82002b837f4d312bf234).
 """
 function h5f_stop_mdc_logging(file_id)
     lock(liblock)
@@ -1946,7 +1946,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5F']/member[name='H5Funmount']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_f.html#gae8f807d3f04a33f132ffb6c5295e897f).
 """
 function h5f_unmount(loc, name)
     lock(liblock)
@@ -1964,7 +1964,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5G']/member[name='H5Gclose']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_g.html#ga8dbe20b390d2504f0bd3589ed8f4e221).
 """
 function h5g_close(group_id)
     lock(liblock)
@@ -1982,7 +1982,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5G']/member[name='H5Gcreate2']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_g.html#ga86d93295965f750ef25dea2505a711d9).
 """
 function h5g_create(loc_id, pathname, lcpl_id, gcpl_id, gapl_id)
     lock(liblock)
@@ -2000,7 +2000,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5G']/member[name='H5Gget_create_plist']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_g.html#ga0b959a53cbffa48f5d68ce33b43b7ed8).
 """
 function h5g_get_create_plist(group_id)
     lock(liblock)
@@ -2018,7 +2018,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5G']/member[name='H5Gget_info']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_g.html#gad4be126ab7bbf2001435e8e70089f3d3).
 """
 function h5g_get_info(group_id, buf)
     lock(liblock)
@@ -2036,7 +2036,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5G']/member[name='H5Gget_num_objs']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_g.html#ga3e30142e15ccf9a08bfc91ca9925c14d).
 """
 function h5g_get_num_objs(loc_id, num_obj)
     lock(liblock)
@@ -2054,7 +2054,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5G']/member[name='H5Gget_objname_by_idx']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_g.html#ga80180e7b819d3c9b3b3f1895e9baaf5b).
 """
 function h5g_get_objname_by_idx(loc_id, idx, pathname, size)
     lock(liblock)
@@ -2072,7 +2072,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5G']/member[name='H5Gopen2']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_g.html#gadab91e2dd7a7e253dcc0e4fe04b81403).
 """
 function h5g_open(loc_id, pathname, gapl_id)
     lock(liblock)
@@ -2090,7 +2090,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5I']/member[name='H5Idec_ref']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_i.html#gaea2aa78caea892edf2a6a6ac70486ed9).
 """
 function h5i_dec_ref(obj_id)
     lock(liblock)
@@ -2108,7 +2108,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5I']/member[name='H5Iget_file_id']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_i.html#ga6ce32e88051e4cdf7d02439d86e5e042).
 """
 function h5i_get_file_id(obj_id)
     lock(liblock)
@@ -2126,7 +2126,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5I']/member[name='H5Iget_name']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_i.html#ga9c84a8dc29566b82b6d1ff7a6e6828f1).
 """
 function h5i_get_name(obj_id, buf, buf_size)
     lock(liblock)
@@ -2144,7 +2144,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5I']/member[name='H5Iget_ref']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_i.html#gac9638ade14cc75b7b125b3723f319c81).
 """
 function h5i_get_ref(obj_id)
     lock(liblock)
@@ -2162,7 +2162,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5I']/member[name='H5Iget_type']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_i.html#ga4941435d4d64de3d7095d2316f415f2d).
 """
 function h5i_get_type(obj_id)
     lock(liblock)
@@ -2180,7 +2180,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5I']/member[name='H5Iinc_ref']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_i.html#ga3fd0c157704573965cafd6e1aa7f368f).
 """
 function h5i_inc_ref(obj_id)
     lock(liblock)
@@ -2198,7 +2198,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5I']/member[name='H5Iis_valid']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_i.html#ga20eb10c559d9ed5ba6f77b31d6a3ba9a).
 """
 function h5i_is_valid(obj_id)
     lock(liblock)
@@ -2216,7 +2216,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5L']/member[name='H5Lcreate_external']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_l.html#ga15dfaeb9b1c0b3136533cb97ee45e683).
 """
 function h5l_create_external(target_file_name, target_obj_name, link_loc_id, link_name, lcpl_id, lapl_id)
     lock(liblock)
@@ -2234,7 +2234,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5L']/member[name='H5Lcreate_hard']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_l.html#ga69d50f7acdfd2f1dc7c4372397e63bd2).
 """
 function h5l_create_hard(obj_loc_id, obj_name, link_loc_id, link_name, lcpl_id, lapl_id)
     lock(liblock)
@@ -2252,7 +2252,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5L']/member[name='H5Lcreate_soft']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_l.html#ga894444623b58ce1ac3bd35538245ac78).
 """
 function h5l_create_soft(target_path, link_loc_id, link_name, lcpl_id, lapl_id)
     lock(liblock)
@@ -2270,7 +2270,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5L']/member[name='H5Ldelete']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_l.html#ga5b4e7f59f5d4bdae94fd8ce6875295cf).
 """
 function h5l_delete(obj_id, pathname, lapl_id)
     lock(liblock)
@@ -2288,7 +2288,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5L']/member[name='H5Lmove']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_l.html#ga0bbc7f9bf25c8aca9dd8433a325c8acb).
 """
 function h5l_move(src_obj_id, src_name, dest_obj_id, dest_name, lcpl_id, lapl_id)
     lock(liblock)
@@ -2306,7 +2306,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5L']/member[name='H5Lexists']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_l.html#ga171be6e41dc1a464edc402df0ebdf801).
 """
 function h5l_exists(loc_id, pathname, lapl_id)
     lock(liblock)
@@ -2324,7 +2324,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5L']/member[name='H5Lget_info']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_l.html#ga97279697f3010a6ad31dd7f4341eb698).
 """
 function h5l_get_info(link_loc_id, link_name, link_buf, lapl_id)
     lock(liblock)
@@ -2342,7 +2342,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5L']/member[name='H5Lget_name_by_idx']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_l.html#ga453ea40c3bb85ec8120dd17deed2bd90).
 """
 function h5l_get_name_by_idx(loc_id, group_name, index_field, order, n, name, size, lapl_id)
     lock(liblock)
@@ -2361,7 +2361,7 @@ end
 
     # External links
 
-    - [](@doxygen /tagfile/compound[name='H5L']/member[name='H5Literate']).
+    - [](https://docs.hdfgroup.org/hdf5/v1_14/group___t_r_a_v.html#ga55406698106930db68242987c11ba051).
     """
     function h5l_iterate(group_id, idx_type, order, idx, op, op_data)
         lock(liblock)
@@ -2381,7 +2381,7 @@ end
 
     # External links
 
-    - [](@doxygen /tagfile/compound[name='H5L']/member[name='H5Literate1']).
+    - [](https://docs.hdfgroup.org/hdf5/v1_14/group___t_r_a_v.html#ga1e7c0a8cf17699563c02e128f27042f1).
     """
     function h5l_iterate(group_id, idx_type, order, idx, op, op_data)
         lock(liblock)
@@ -2400,7 +2400,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Oare_mdc_flushes_disabled']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#gab2fa388aadd1ff154ee150cbb4884c1c).
 """
 function h5o_are_mdc_flushes_disabled(object_id, are_disabled)
     lock(liblock)
@@ -2418,7 +2418,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Oclose']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#ga545ad7c54987013ebd50b40fe9e73c61).
 """
 function h5o_close(object_id)
     lock(liblock)
@@ -2436,7 +2436,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Ocopy']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#gaa94449be6f67f499be5ddd3fc44f4225).
 """
 function h5o_copy(src_loc_id, src_name, dst_loc_id, dst_name, ocpypl_id, lcpl_id)
     lock(liblock)
@@ -2454,7 +2454,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Odecr_refcount']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#ga60c20da5e244c28a653d4fa23d316b44).
 """
 function h5o_decr_refcount(object_id)
     lock(liblock)
@@ -2472,7 +2472,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Odisable_mdc_flushes']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#ga0908be309da1fb4f771c1e264fac22ae).
 """
 function h5o_disable_mdc_flushes(object_id)
     lock(liblock)
@@ -2490,7 +2490,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Oenable_mdc_flushes']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#ga21014920bdabf6973e233796d7174156).
 """
 function h5o_enable_mdc_flushes(object_id)
     lock(liblock)
@@ -2508,7 +2508,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Oexists_by_name']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#gab0fef18d97844c4f83d412c5a22def7b).
 """
 function h5o_exists_by_name(loc_id, name, lapl_id)
     lock(liblock)
@@ -2526,7 +2526,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Oflush']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#gad99f35048cba4534b6393214684f090f).
 """
 function h5o_flush(obj_id)
     lock(liblock)
@@ -2544,7 +2544,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Oget_comment']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#gaa1511ce5e2fe01ce7ea58f2f851d694b).
 """
 function h5o_get_comment(obj_id, comment, bufsize)
     lock(liblock)
@@ -2562,7 +2562,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Oget_comment_by_name']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#gae6d92d597c5a292d342a1bda91e41171).
 """
 function h5o_get_comment_by_name(loc_id, name, comment, bufsize, lapl_id)
     lock(liblock)
@@ -2581,7 +2581,7 @@ end
 
     # External links
 
-    - [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Oget_info1']).
+    - [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#gaf3751684a6706e3ba49b863406011f80).
     """
     function h5o_get_info(object_id, buf)
         lock(liblock)
@@ -2601,7 +2601,7 @@ end
 
     # External links
 
-    - [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Oget_info2']).
+    - [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#ga06f896e14fe4fa940fbc2bc235e0cf74).
     """
     function h5o_get_info(loc_id, oinfo, fields)
         lock(liblock)
@@ -2621,7 +2621,7 @@ end
 
     # External links
 
-    - [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Oget_info3']).
+    - [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#gaf0fbf7d780a1eefce920facadb198013).
     """
     function h5o_get_info(loc_id, oinfo, fields)
         lock(liblock)
@@ -2641,7 +2641,7 @@ end
 
     # External links
 
-    - [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Oget_info_by_idx1']).
+    - [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#ga7208d2cf198dcfc875603323841bffae).
     """
     function h5o_get_info_by_idx(loc_id, group_name, idx_type, order, n, oinfo, lapl_id)
         lock(liblock)
@@ -2661,7 +2661,7 @@ end
 
     # External links
 
-    - [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Oget_info_by_idx2']).
+    - [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#ga85e15e65922874111da1a5efd5dd7bed).
     """
     function h5o_get_info_by_idx(loc_id, group_name, idx_type, order, n, oinfo, fields, lapl_id)
         lock(liblock)
@@ -2681,7 +2681,7 @@ end
 
     # External links
 
-    - [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Oget_info_by_idx3']).
+    - [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#gafa2f8884f7d3e7fd9b8549f5b59fd9eb).
     """
     function h5o_get_info_by_idx(loc_id, group_name, idx_type, order, n, oinfo, fields, lapl_id)
         lock(liblock)
@@ -2701,7 +2701,7 @@ end
 
     # External links
 
-    - [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Oget_info_by_name1']).
+    - [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#ga96ce408ffda805210844246904da2842).
     """
     function h5o_get_info_by_name(loc_id, name, oinfo, lapl_id)
         lock(liblock)
@@ -2721,7 +2721,7 @@ end
 
     # External links
 
-    - [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Oget_info_by_name2']).
+    - [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#ga0090da86c086c1c63a5acfaed39a035e).
     """
     function h5o_get_info_by_name(loc_id, name, oinfo, fields, lapl_id)
         lock(liblock)
@@ -2741,7 +2741,7 @@ end
 
     # External links
 
-    - [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Oget_info_by_name3']).
+    - [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#gabb69c962999e027cef0079bbb1282199).
     """
     function h5o_get_info_by_name(loc_id, name, oinfo, fields, lapl_id)
         lock(liblock)
@@ -2760,7 +2760,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Oget_native_info']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#ga677d99ab106e2032b991b75b75de0e46).
 """
 function h5o_get_native_info(loc_id, oinfo, fields)
     lock(liblock)
@@ -2778,7 +2778,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Oget_native_info_by_idx']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#gafa6570d8b0ef6e2aff75093e1f99f67e).
 """
 function h5o_get_native_info_by_idx(loc_id, group_name, idx_type, order, n, oinfo, fields, lapl_id)
     lock(liblock)
@@ -2796,7 +2796,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Oget_native_info_by_name']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#ga296ded21aeac3921fee07272353b8476).
 """
 function h5o_get_native_info_by_name(loc_id, name, oinfo, fields, lapl_id)
     lock(liblock)
@@ -2814,7 +2814,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Oincr_refcount']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#ga2086bad6c3cd2a711c306a48c093ff55).
 """
 function h5o_incr_refcount(object_id)
     lock(liblock)
@@ -2832,7 +2832,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Olink']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#ga2c97dd58e64b67d16325fceb7e02113f).
 """
 function h5o_link(obj_id, new_loc_id, new_name, lcpl_id, lapl_id)
     lock(liblock)
@@ -2850,7 +2850,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Oopen']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#ga9f635f58c7ddf17f87c253bfbca08bc1).
 """
 function h5o_open(loc_id, pathname, lapl_id)
     lock(liblock)
@@ -2868,7 +2868,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Oopen_by_addr']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#ga137f3823adab4daaaf8fe87b40453fa2).
 """
 function h5o_open_by_addr(loc_id, addr)
     lock(liblock)
@@ -2886,7 +2886,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Oopen_by_idx']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#gaeb66e5cbb3ca79890fc284a0b06762be).
 """
 function h5o_open_by_idx(loc_id, group_name, index_type, order, n, lapl_id)
     lock(liblock)
@@ -2904,7 +2904,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Orefresh']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#gaf0318b68be9ab23a92b8a6bee0af9e2f).
 """
 function h5o_refresh(oid)
     lock(liblock)
@@ -2922,7 +2922,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Oset_comment']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#ga8b5cf8e916204e29616516046121f631).
 """
 function h5o_set_comment(obj_id, comment)
     lock(liblock)
@@ -2940,7 +2940,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Oset_comment_by_name']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#gafeb5242de7f1080b5c19f4fe19784505).
 """
 function h5o_set_comment_by_name(loc_id, name, comment, lapl_id)
     lock(liblock)
@@ -2958,7 +2958,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Otoken_cmp']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#gaeb8da4fbe62f8a3cd9146a7ac1093562).
 """
 function h5o_token_cmp(loc_id, token1, token2, cmp_value)
     lock(liblock)
@@ -2976,7 +2976,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Otoken_from_str']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#ga5136c14b4e907f15007030d7a6d6cd24).
 """
 function h5o_token_from_str(loc_id, token_str, token)
     lock(liblock)
@@ -2994,7 +2994,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Otoken_to_str']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#ga2bdd7528090f7f2c4b361ab4cc7735f6).
 """
 function h5o_token_to_str(loc_id, token, token_str)
     lock(liblock)
@@ -3013,7 +3013,7 @@ end
 
     # External links
 
-    - [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Ovisit1']).
+    - [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#ga6efdb2a0a9fe9fe46695cc0f7bd993e7).
     """
     function h5o_visit(obj_id, idx_type, order, op, op_data)
         lock(liblock)
@@ -3033,7 +3033,7 @@ end
 
     # External links
 
-    - [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Ovisit3']).
+    - [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#ga6d03115ae0e5e5b516bbf35bb492266a).
     """
     function h5o_visit(obj_id, idx_type, order, op, op_data, fields)
         lock(liblock)
@@ -3053,7 +3053,7 @@ end
 
     # External links
 
-    - [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Ovisit_by_name1']).
+    - [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#gaffacf3bd66f4fe074099eae1c80914f2).
     """
     function h5o_visit_by_name(loc_id, obj_name, idx_type, order, op, op_data, lapl_id)
         lock(liblock)
@@ -3073,7 +3073,7 @@ end
 
     # External links
 
-    - [](@doxygen /tagfile/compound[name='H5O']/member[name='H5Ovisit_by_name3']).
+    - [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_o.html#ga34815400b01df59c4dac19436124885a).
     """
     function h5o_visit_by_name(loc_id, obj_name, idx_type, order, op, op_data, fields, lapl_id)
         lock(liblock)
@@ -3092,7 +3092,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_l_c_r_a.html#ga40f1c3042011462c632844464a746db3).
 """
 function h5p_get(plist_id, name, value)
     lock(liblock)
@@ -3110,7 +3110,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_alignment']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga6735afde382cfd746b92a1a3b0e6a2ab).
 """
 function h5p_get_alignment(fapl_id, threshold, alignment)
     lock(liblock)
@@ -3128,7 +3128,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_alloc_time']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#gaf507a3efa5d1f37448baea089fc053d8).
 """
 function h5p_get_alloc_time(plist_id, alloc_time)
     lock(liblock)
@@ -3146,7 +3146,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_append_flush']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_a_p_l.html#gacd6803640eebd20e408c330192b09fa6).
 """
 function h5p_get_append_flush(dapl_id, dims, boundary, func, udata)
     lock(liblock)
@@ -3164,7 +3164,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_attr_creation_order']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___o_c_p_l.html#ga2a54d1ff8d7a0d0e8d652f373c18bc37).
 """
 function h5p_get_attr_creation_order(plist_id, crt_order_flags)
     lock(liblock)
@@ -3182,7 +3182,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_attr_phase_change']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___o_c_p_l.html#gaf7c57a6e78a4123f82450559623ab534).
 """
 function h5p_get_attr_phase_change(plist_id, max_compact, min_dense)
     lock(liblock)
@@ -3200,7 +3200,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_btree_ratios']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_x_p_l.html#ga3f3df48ce44b6af7517654b23a37fa02).
 """
 function h5p_get_btree_ratios(plist_id, left, middle, right)
     lock(liblock)
@@ -3218,7 +3218,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_buffer']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_x_p_l.html#ga1278b9979cc833e77d699cc878c6dab4).
 """
 function h5p_get_buffer(plist_id, tconv, bkg)
     lock(liblock)
@@ -3236,7 +3236,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_cache']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga9481a0b08d729ec68897d57db1827861).
 """
 function h5p_get_cache(plist_id, mdc_nelmts, rdcc_nslots, rdcc_nbytes, rdcc_w0)
     lock(liblock)
@@ -3254,7 +3254,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_char_encoding']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___a_c_p_l.html#ga9b35ef9add6463997330e9b4b606603d).
 """
 function h5p_get_char_encoding(plist_id, encoding)
     lock(liblock)
@@ -3272,7 +3272,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_chunk']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#ga4ef814034f601f48ab1ed6db79b4354c).
 """
 function h5p_get_chunk(plist_id, n_dims, dims)
     lock(liblock)
@@ -3290,7 +3290,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_chunk_cache']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_a_p_l.html#gaeda015dfee4167cc60baab1d1f0560fe).
 """
 function h5p_get_chunk_cache(dapl_id, rdcc_nslots, rdcc_nbytes, rdcc_w0)
     lock(liblock)
@@ -3308,7 +3308,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_chunk_opts']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#ga6e8d8f6a14b79bd110e27666d95031cf).
 """
 function h5p_get_chunk_opts(plist_id, opts)
     lock(liblock)
@@ -3326,7 +3326,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_class']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_l_c_r.html#ga9b230c1e85790f9f45c4ca2e79dd62c5).
 """
 function h5p_get_class(plist_id)
     lock(liblock)
@@ -3344,7 +3344,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_class_parent']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_l_c_r_a.html#ga89f228c04207992d93fc3f2dddd860a5).
 """
 function h5p_get_class_parent(pclass_id)
     lock(liblock)
@@ -3362,7 +3362,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_copy_object']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___o_c_p_y_p_l.html#gad81b509481ba53a1ef1ba3c7083fc295).
 """
 function h5p_get_copy_object(plist_id, copy_options)
     lock(liblock)
@@ -3380,7 +3380,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_core_write_tracking']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga60ec714459a4911d28e46deb201f4f2e).
 """
 function h5p_get_core_write_tracking(fapl_id, is_enabled, page_size)
     lock(liblock)
@@ -3398,7 +3398,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_create_intermediate_group']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___l_c_p_l.html#gaf7db1b7ce19703f30f1827b7c899c3b0).
 """
 function h5p_get_create_intermediate_group(lcpl_id, crt_intermed_group)
     lock(liblock)
@@ -3416,7 +3416,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_data_transform']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_x_p_l.html#ga865b05218e704578fe8db0c9dec07b25).
 """
 function h5p_get_data_transform(plist_id, expression, size)
     lock(liblock)
@@ -3434,7 +3434,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_driver']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga43a733fe9723dd15f5ad7abda909a1b8).
 """
 function h5p_get_driver(plist_id)
     lock(liblock)
@@ -3452,7 +3452,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_driver_info']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga14056dca8f3d6249474d5321d4298fe2).
 """
 function h5p_get_driver_info(plist_id)
     lock(liblock)
@@ -3470,7 +3470,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_dset_no_attrs_hint']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#ga2fd4f0446a38186db8256cef4c97a970).
 """
 function h5p_get_dset_no_attrs_hint(dcpl_id, minimize)
     lock(liblock)
@@ -3488,7 +3488,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_dxpl_mpio']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_x_p_l.html#gab66eca0259c33d575b4050eebfb6f2cd).
 """
 function h5p_get_dxpl_mpio(dxpl_id, xfer_mode)
     lock(liblock)
@@ -3506,7 +3506,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_edc_check']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_x_p_l.html#gabc2b1e2af542ac15ee1613f4f89117e1).
 """
 function h5p_get_edc_check(plist_id)
     lock(liblock)
@@ -3524,7 +3524,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_efile_prefix']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_a_p_l.html#ga442647d48171db920c71a7baf6fdeee6).
 """
 function h5p_get_efile_prefix(dapl_id, prefix, size)
     lock(liblock)
@@ -3542,7 +3542,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_elink_acc_flags']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___l_a_p_l.html#gaf1357eb0940f171efecae06a9ed6155b).
 """
 function h5p_get_elink_acc_flags(lapl_id, flags)
     lock(liblock)
@@ -3560,7 +3560,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_elink_cb']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___l_a_p_l.html#gacbf576bd8f7e63f3a91134b12d6b2d12).
 """
 function h5p_get_elink_cb(lapl_id, func, op_data)
     lock(liblock)
@@ -3578,7 +3578,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_elink_fapl']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___l_a_p_l.html#ga2c2fe0a0396b9a0a02b28402e4ee108a).
 """
 function h5p_get_elink_fapl(lapl_id)
     lock(liblock)
@@ -3596,7 +3596,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_elink_file_cache_size']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga4c9bcfff90f48bfefa2c25e551485923).
 """
 function h5p_get_elink_file_cache_size(plist_id, efc_size)
     lock(liblock)
@@ -3614,7 +3614,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_elink_prefix']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___l_a_p_l.html#ga7960f746797bcf35f70746cd644f8b5a).
 """
 function h5p_get_elink_prefix(plist_id, prefix, size)
     lock(liblock)
@@ -3632,7 +3632,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_est_link_info']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___g_c_p_l.html#ga701867215546a345dea7b8e9cf7a1b61).
 """
 function h5p_get_est_link_info(plist_id, est_num_entries, est_name_len)
     lock(liblock)
@@ -3650,7 +3650,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_evict_on_close']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga12789fcfeaea073c13202e6401f404a6).
 """
 function h5p_get_evict_on_close(fapl_id, evict_on_close)
     lock(liblock)
@@ -3668,7 +3668,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_external']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#ga78253b80b6c86faf7ff0db135146521d).
 """
 function h5p_get_external(plist, idx, name_size, name, offset, size)
     lock(liblock)
@@ -3686,7 +3686,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_external_count']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#ga4c45d90845ea7627b6238f95168c41ce).
 """
 function h5p_get_external_count(plist)
     lock(liblock)
@@ -3704,7 +3704,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_family_offset']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga14977eaaf6565ba871b575de3163f1b3).
 """
 function h5p_get_family_offset(fapl_id, offset)
     lock(liblock)
@@ -3722,7 +3722,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_fapl_core']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#gac347d401cbb28fecd78c5f15ddb4c9c1).
 """
 function h5p_get_fapl_core(fapl_id, increment, backing_store)
     lock(liblock)
@@ -3740,7 +3740,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_fapl_family']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga0bc1a003f26bf4b53e4487b6ca117389).
 """
 function h5p_get_fapl_family(fapl_id, memb_size, memb_fapl_id)
     lock(liblock)
@@ -3758,7 +3758,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_fapl_hdfs']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#gae59e7d8e0e8823e6dd6034b66418ed00).
 """
 function h5p_get_fapl_hdfs(fapl_id, fa_out)
     lock(liblock)
@@ -3776,7 +3776,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_fapl_multi']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga765b7880795a139f3b567743ac88c3c7).
 """
 function h5p_get_fapl_multi(fapl_id, memb_map, memb_fapl, memb_name, memb_addr, relax)
     lock(liblock)
@@ -3794,7 +3794,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_fapl_splitter']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#gaf6ac1c131acee33dfb878593dfefb4ac).
 """
 function h5p_get_fapl_splitter(fapl_id, config_ptr)
     lock(liblock)
@@ -3812,7 +3812,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_fapl_ros3']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga13e273711e160cbd58e60c701b4f50e6).
 """
 function h5p_get_fapl_ros3(fapl_id, fa_out)
     lock(liblock)
@@ -3830,7 +3830,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_fclose_degree']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga41da04bb4f823ba9f7d6c57dc8fe2878).
 """
 function h5p_get_fclose_degree(fapl_id, fc_degree)
     lock(liblock)
@@ -3848,7 +3848,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_file_image']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga337626cc516d5d1e3303ea6bc350e56b).
 """
 function h5p_get_file_image(fapl_id, buf_ptr_ptr, buf_len_ptr)
     lock(liblock)
@@ -3866,7 +3866,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_file_image_callbacks']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#gae17e38082dfdbadd75c897f1e6a9096e).
 """
 function h5p_get_file_image_callbacks(fapl_id, callbacks_ptr)
     lock(liblock)
@@ -3884,7 +3884,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_file_locking']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga5de19a5a8ac23ca417aa2d49d708dc2d).
 """
 function h5p_get_file_locking(fapl_id, use_file_locking, ignore_when_disabled)
     lock(liblock)
@@ -3902,7 +3902,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_file_space']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_c_p_l.html#ga9873dad32f2be5b4bb41497e2fbf5619).
 """
 function h5p_get_file_space(plist_id, strategy, threshold)
     lock(liblock)
@@ -3920,7 +3920,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_file_space_page_size']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_c_p_l.html#gaab5e8c08e4f588e0af1d937fcebfc885).
 """
 function h5p_get_file_space_page_size(plist_id, fsp_size)
     lock(liblock)
@@ -3938,7 +3938,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_file_space_strategy']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_c_p_l.html#ga54cf6ca4f897ba9ee3695a15fe8e6029).
 """
 function h5p_get_file_space_strategy(plist_id, strategy, persist, threshold)
     lock(liblock)
@@ -3956,7 +3956,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_fill_time']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#ga92c5eb5ee19bfd4a9184cf0428d1b00c).
 """
 function h5p_get_fill_time(plist_id, fill_time)
     lock(liblock)
@@ -3974,7 +3974,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_fill_value']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#ga82bbe8c77c7eb9c460bfd1eb26881355).
 """
 function h5p_get_fill_value(plist_id, type_id, value)
     lock(liblock)
@@ -3992,7 +3992,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_filter2']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___o_c_p_l.html#ga024d200a6a07e12f008a62c4e62d0bcc).
 """
 function h5p_get_filter(plist_id, idx, flags, cd_nemlts, cd_values, namelen, name, filter_config)
     lock(liblock)
@@ -4010,7 +4010,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_filter_by_id2']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___o_c_p_l.html#ga2d5e9df5f0e93abae11ee5edd82fcec3).
 """
 function h5p_get_filter_by_id(plist_id, filter_id, flags, cd_nelmts, cd_values, namelen, name, filter_config)
     lock(liblock)
@@ -4028,7 +4028,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_gc_references']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#gaaa81d8427b419d80eff6e1d216d99b71).
 """
 function h5p_get_gc_references(fapl_id, gc_ref)
     lock(liblock)
@@ -4046,7 +4046,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_hyper_vector_size']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_x_p_l.html#gaa55e7a6dd26a8df51b331febfeeb376b).
 """
 function h5p_get_hyper_vector_size(fapl_id, size)
     lock(liblock)
@@ -4064,7 +4064,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_istore_k']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_c_p_l.html#ga2179b032be5d2efbca63d8f82a292ec1).
 """
 function h5p_get_istore_k(plist_id, ik)
     lock(liblock)
@@ -4082,7 +4082,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_layout']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#ga655530b0f40990507fedeef6b3068db3).
 """
 function h5p_get_layout(plist_id)
     lock(liblock)
@@ -4100,7 +4100,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_libver_bounds']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#gad5d7e671c3a06bcee64bc25841aaf607).
 """
 function h5p_get_libver_bounds(fapl_id, low, high)
     lock(liblock)
@@ -4118,7 +4118,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_link_creation_order']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___g_c_p_l.html#gaa2c2f433c7e65f694e0444e7f0ed2d33).
 """
 function h5p_get_link_creation_order(plist_id, crt_order_flags)
     lock(liblock)
@@ -4136,7 +4136,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_link_phase_change']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___g_c_p_l.html#gacab66461dca6c2beafd624c2e4d9f94d).
 """
 function h5p_get_link_phase_change(plist_id, max_compact, min_dense)
     lock(liblock)
@@ -4154,7 +4154,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_local_heap_size_hint']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___g_c_p_l.html#ga49e14718767fa160248e3852c2abdd74).
 """
 function h5p_get_local_heap_size_hint(plist_id, size_hint)
     lock(liblock)
@@ -4172,7 +4172,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_mcdt_search_cb']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___o_c_p_y_p_l.html#ga5d7b82394d37bda28769a0435300d396).
 """
 function h5p_get_mcdt_search_cb(plist_id, func, op_data)
     lock(liblock)
@@ -4190,7 +4190,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_mdc_config']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga3012f7f3310c7d25ada7617896bef1ee).
 """
 function h5p_get_mdc_config(plist_id, config_ptr)
     lock(liblock)
@@ -4208,7 +4208,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_mdc_image_config']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#gaaa18d59ee9efb12626410b1638f76f00).
 """
 function h5p_get_mdc_image_config(plist_id, config_ptr)
     lock(liblock)
@@ -4226,7 +4226,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_mdc_log_options']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#gaa3a1ca6e294cc5074933239cc3d0e4a3).
 """
 function h5p_get_mdc_log_options(plist_id, is_enabled, location, location_size, start_on_access)
     lock(liblock)
@@ -4244,7 +4244,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_meta_block_size']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#gac17861181246af0209c0da5209305461).
 """
 function h5p_get_meta_block_size(fapl_id, size)
     lock(liblock)
@@ -4262,7 +4262,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_metadata_read_attempts']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga670948d56435920f1e1c2e88b823935e).
 """
 function h5p_get_metadata_read_attempts(plist_id, attempts)
     lock(liblock)
@@ -4280,7 +4280,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_multi_type']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga251515e9fee4641037b4866a4f7c49fe).
 """
 function h5p_get_multi_type(fapl_id, type)
     lock(liblock)
@@ -4298,7 +4298,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_nfilters']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___o_c_p_l.html#gacbad1ca36a61246b439a25f28e7575fb).
 """
 function h5p_get_nfilters(plist_id)
     lock(liblock)
@@ -4316,7 +4316,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_nlinks']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___l_a_p_l.html#ga6bfa33fa9a77011cbdc06d0fbc907177).
 """
 function h5p_get_nlinks(plist_id, nlinks)
     lock(liblock)
@@ -4334,7 +4334,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_nprops']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_l_c_r_a.html#ga13f41512715a8019e89529ea093c2c43).
 """
 function h5p_get_nprops(id, nprops)
     lock(liblock)
@@ -4352,7 +4352,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_obj_track_times']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___o_c_p_l.html#gad99400915d340da978dd6ac5676122c6).
 """
 function h5p_get_obj_track_times(plist_id, track_times)
     lock(liblock)
@@ -4370,7 +4370,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_object_flush_cb']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#gadb66d434fd8d2f600213b0eec539564e).
 """
 function h5p_get_object_flush_cb(plist_id, func, udata)
     lock(liblock)
@@ -4388,7 +4388,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_page_buffer_size']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga0da11baf31cf424d053aa7952c933d98).
 """
 function h5p_get_page_buffer_size(plist_id, buf_size, min_meta_perc, min_raw_perc)
     lock(liblock)
@@ -4406,7 +4406,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_preserve']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_x_p_l.html#gacca1a094d70c3b2277175145142fda10).
 """
 function h5p_get_preserve(plist_id)
     lock(liblock)
@@ -4424,7 +4424,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_shared_mesg_index']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_c_p_l.html#gac6bac4446c45d348c953b3afdecede2c).
 """
 function h5p_get_shared_mesg_index(plist_id, index_num, mesg_type_flags, min_mesg_size)
     lock(liblock)
@@ -4442,7 +4442,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_shared_mesg_nindexes']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_c_p_l.html#ga30980db1814a251e7b40362af1006652).
 """
 function h5p_get_shared_mesg_nindexes(plist_id, nindexes)
     lock(liblock)
@@ -4460,7 +4460,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_shared_mesg_phase_change']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_c_p_l.html#gab013e791706b44f545a97096d8e4c72e).
 """
 function h5p_get_shared_mesg_phase_change(plist_id, max_list, min_btree)
     lock(liblock)
@@ -4478,7 +4478,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_sieve_buf_size']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#gac2321d0c34bb2b3cf33cd7bf02ca8e66).
 """
 function h5p_get_sieve_buf_size(fapl_id, size)
     lock(liblock)
@@ -4496,7 +4496,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_size']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_l_c_r_a.html#gaaad1c5ad2069145e2f5397ce4ab3a93c).
 """
 function h5p_get_size(id, name, size)
     lock(liblock)
@@ -4514,7 +4514,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_sizes']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_c_p_l.html#ga8da25b0367cf226c2888141661fd7a2d).
 """
 function h5p_get_sizes(plist_id, sizeof_addr, sizeof_size)
     lock(liblock)
@@ -4532,7 +4532,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_small_data_block_size']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga6896bea06d7744b56e22347f572f5470).
 """
 function h5p_get_small_data_block_size(fapl_id, size)
     lock(liblock)
@@ -4550,7 +4550,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_sym_k']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_c_p_l.html#ga1d4ee26c030ced6d7a314543578c88b1).
 """
 function h5p_get_sym_k(plist_id, ik, lk)
     lock(liblock)
@@ -4568,7 +4568,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_type_conv_cb']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_x_p_l.html#gae8c8557d303fa914b569da0182284e89).
 """
 function h5p_get_type_conv_cb(dxpl_id, op, operate_data)
     lock(liblock)
@@ -4586,7 +4586,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_userblock']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_c_p_l.html#ga75b312bb0c70419fc428d743a65bed86).
 """
 function h5p_get_userblock(plist_id, len)
     lock(liblock)
@@ -4604,7 +4604,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_version']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_c_p_l.html#ga99c0afbb68e8e775ae70cac44404a534).
 """
 function h5p_get_version(plist_id, boot, freelist, stab, shhdr)
     lock(liblock)
@@ -4622,7 +4622,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_virtual_count']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#ga83dcce1ce110d1ff6eae0fb77d4a7c85).
 """
 function h5p_get_virtual_count(dcpl_id, count)
     lock(liblock)
@@ -4640,7 +4640,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_virtual_dsetname']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#gaf50620fd5d83dc9ca1e5c3f374c5a952).
 """
 function h5p_get_virtual_dsetname(dcpl_id, index, name, size)
     lock(liblock)
@@ -4658,7 +4658,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_virtual_filename']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#ga5c17780cc9a72a0f62d70f6138510afa).
 """
 function h5p_get_virtual_filename(dcpl_id, index, name, size)
     lock(liblock)
@@ -4676,7 +4676,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_virtual_prefix']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_a_p_l.html#ga9a48c80955877c20d53e8fd3f49a2995).
 """
 function h5p_get_virtual_prefix(dapl_id, prefix, size)
     lock(liblock)
@@ -4694,7 +4694,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_virtual_printf_gap']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_a_p_l.html#ga833dfc6d9c87738c9d94b610e70a818f).
 """
 function h5p_get_virtual_printf_gap(dapl_id, gap_size)
     lock(liblock)
@@ -4712,7 +4712,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_virtual_srcspace']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#ga8319e9386cdb9b3881a8b698edfc78fc).
 """
 function h5p_get_virtual_srcspace(dcpl_id, index)
     lock(liblock)
@@ -4730,7 +4730,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_virtual_view']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_a_p_l.html#ga7173663654b085e8583ab609c988b47c).
 """
 function h5p_get_virtual_view(dapl_id, view)
     lock(liblock)
@@ -4748,7 +4748,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_virtual_vspace']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#ga6425cabbc055b66e218b4728d6eb911d).
 """
 function h5p_get_virtual_vspace(dcpl_id, index)
     lock(liblock)
@@ -4766,7 +4766,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_vlen_mem_manager']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_x_p_l.html#ga9de8cad8b5664a956d965fd9414c376e).
 """
 function h5p_get_vlen_mem_manager(plist_id, alloc_func, alloc_info, free_func, free_info)
     lock(liblock)
@@ -4784,7 +4784,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_vol_id']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga5f133bdf09ca5a32622688d1ba5cc838).
 """
 function h5p_get_vol_id(plist_id, vol_id)
     lock(liblock)
@@ -4802,7 +4802,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pget_vol_info']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#gafc58db23c257cdcf2f0c1c3ae911ab0f).
 """
 function h5p_get_vol_info(plist_id, vol_info)
     lock(liblock)
@@ -4820,7 +4820,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_l_c_r_a.html#ga971d2f700cb98ccdfcdf93a39118983b).
 """
 function h5p_set(plist_id, name, value)
     lock(liblock)
@@ -4838,7 +4838,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_alignment']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#gab99d5af749aeb3896fd9e3ceb273677a).
 """
 function h5p_set_alignment(plist_id, threshold, alignment)
     lock(liblock)
@@ -4856,7 +4856,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_alloc_time']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#ga85faefca58387bba409b65c470d7d851).
 """
 function h5p_set_alloc_time(plist_id, alloc_time)
     lock(liblock)
@@ -4874,7 +4874,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_append_flush']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_a_p_l.html#ga2f685a7b3f3a4fa35ddcd1659ab4a835).
 """
 function h5p_set_append_flush(dapl_id, ndims, boundary, func, udata)
     lock(liblock)
@@ -4892,7 +4892,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_attr_creation_order']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___o_c_p_l.html#gade132fded1df87300a4c7175c6bd766a).
 """
 function h5p_set_attr_creation_order(plist_id, crt_order_flags)
     lock(liblock)
@@ -4910,7 +4910,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_attr_phase_change']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___o_c_p_l.html#ga0115b13dcbd8770cbdcef3db2ac12ea1).
 """
 function h5p_set_attr_phase_change(plist_id, max_compact, min_dense)
     lock(liblock)
@@ -4928,7 +4928,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_btree_ratios']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_x_p_l.html#ga51d126d64fa766d44160a95057a2c733).
 """
 function h5p_set_btree_ratios(plist_id, left, middle, right)
     lock(liblock)
@@ -4946,7 +4946,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_buffer']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_x_p_l.html#ga777e8c171c9e462230a9fa40874b38ce).
 """
 function h5p_set_buffer(plist_id, size, tconv, bkg)
     lock(liblock)
@@ -4964,7 +4964,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_cache']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga034a5fc54d9b05296555544d8dd9fe89).
 """
 function h5p_set_cache(plist_id, mdc_nelmts, rdcc_nslots, rdcc_nbytes, rdcc_w0)
     lock(liblock)
@@ -4982,7 +4982,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_char_encoding']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___a_c_p_l.html#gad4fa8e2d17236786f770cf17eef908cc).
 """
 function h5p_set_char_encoding(plist_id, encoding)
     lock(liblock)
@@ -5000,7 +5000,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_chunk']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#ga3584d592e377da3604b7604e266dcf5b).
 """
 function h5p_set_chunk(plist_id, ndims, dims)
     lock(liblock)
@@ -5018,7 +5018,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_chunk_cache']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_a_p_l.html#ga104d00442c31714ee073dee518f661f1).
 """
 function h5p_set_chunk_cache(dapl_id, rdcc_nslots, rdcc_nbytes, rdcc_w0)
     lock(liblock)
@@ -5036,7 +5036,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_chunk_opts']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#ga8e60618d9030dc1b99ad9c8ff7867873).
 """
 function h5p_set_chunk_opts(plist_id, opts)
     lock(liblock)
@@ -5054,7 +5054,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_copy_object']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___o_c_p_y_p_l.html#ga8819261e0b4663827212892e10dfc8a6).
 """
 function h5p_set_copy_object(plist_id, copy_options)
     lock(liblock)
@@ -5072,7 +5072,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_core_write_tracking']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga237e300b96222a259896b24cf52405b0).
 """
 function h5p_set_core_write_tracking(fapl_id, is_enabled, page_size)
     lock(liblock)
@@ -5090,7 +5090,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_create_intermediate_group']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___l_c_p_l.html#ga66c4c5d3f34e5cf65d00e47a5387383c).
 """
 function h5p_set_create_intermediate_group(plist_id, setting)
     lock(liblock)
@@ -5108,7 +5108,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_data_transform']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_x_p_l.html#gaa8c317b6164ae22a6ddae4131bbbcd22).
 """
 function h5p_set_data_transform(plist_id, expression)
     lock(liblock)
@@ -5126,7 +5126,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_deflate']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#gaf1f569bfc54552bdb9317d2b63318a0d).
 """
 function h5p_set_deflate(plist_id, setting)
     lock(liblock)
@@ -5144,7 +5144,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_driver']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga8bcce60e23e9d2a019212c63b146502e).
 """
 function h5p_set_driver(plist_id, driver_id, driver_info)
     lock(liblock)
@@ -5162,7 +5162,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_dset_no_attrs_hint']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#gaf5ae8c0257c02e3fbe50bde70b1eb8be).
 """
 function h5p_set_dset_no_attrs_hint(dcpl_id, minimize)
     lock(liblock)
@@ -5180,7 +5180,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_dxpl_mpio']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_x_p_l.html#ga001a22b64f60b815abf5de8b4776f09e).
 """
 function h5p_set_dxpl_mpio(dxpl_id, xfer_mode)
     lock(liblock)
@@ -5198,7 +5198,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_edc_check']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_x_p_l.html#ga0d95dfa506784acc9aed850c99713609).
 """
 function h5p_set_edc_check(plist_id, check)
     lock(liblock)
@@ -5216,7 +5216,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_efile_prefix']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_a_p_l.html#gad487f84157fd0944cbe1cbd4dea4e1b8).
 """
 function h5p_set_efile_prefix(plist_id, prefix)
     lock(liblock)
@@ -5234,7 +5234,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_elink_acc_flags']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___l_a_p_l.html#ga020f7eb2eae01043286af50db0a76d82).
 """
 function h5p_set_elink_acc_flags(lapl_id, flags)
     lock(liblock)
@@ -5252,7 +5252,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_elink_cb']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___l_a_p_l.html#ga8850042eed51777866d7bd0d050cfdc2).
 """
 function h5p_set_elink_cb(lapl_id, func, op_data)
     lock(liblock)
@@ -5270,7 +5270,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_elink_fapl']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___l_a_p_l.html#ga3895e8e60ce8f0b6f32ab7a22c715d1a).
 """
 function h5p_set_elink_fapl(lapl_id, fapl_id)
     lock(liblock)
@@ -5288,7 +5288,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_elink_file_cache_size']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#gac21a815e9b133802df625c9f766ef325).
 """
 function h5p_set_elink_file_cache_size(plist_id, efc_size)
     lock(liblock)
@@ -5306,7 +5306,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_elink_prefix']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___l_a_p_l.html#gafa5eced13ba3a00cdd65669626dc7294).
 """
 function h5p_set_elink_prefix(plist_id, prefix)
     lock(liblock)
@@ -5324,7 +5324,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_est_link_info']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___g_c_p_l.html#gaa8571642d45e73ab5a9ae71cf00501f9).
 """
 function h5p_set_est_link_info(plist_id, est_num_entries, est_name_len)
     lock(liblock)
@@ -5342,7 +5342,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_evict_on_close']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#gaa44cc0e592608e12082dad9305b3c74d).
 """
 function h5p_set_evict_on_close(fapl_id, evict_on_close)
     lock(liblock)
@@ -5360,7 +5360,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_external']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#ga85ff7c9c827fa524041cd58c199b77b8).
 """
 function h5p_set_external(plist_id, name, offset, size)
     lock(liblock)
@@ -5378,7 +5378,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_family_offset']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga6b24e6daf4816bbfb89b63bab40aa982).
 """
 function h5p_set_family_offset(fapl_id, offset)
     lock(liblock)
@@ -5396,7 +5396,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_fapl_core']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga6e6628f620a1c58c704129cf07282849).
 """
 function h5p_set_fapl_core(fapl_id, increment, backing_store)
     lock(liblock)
@@ -5414,7 +5414,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_fapl_family']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga95d19da25f196ce1ace10af00f49ab53).
 """
 function h5p_set_fapl_family(fapl_id, memb_size, memb_fapl_id)
     lock(liblock)
@@ -5432,7 +5432,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_fapl_hdfs']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga970d077c8e712a4692f43fa4f38dde14).
 """
 function h5p_set_fapl_hdfs(fapl_id, fa)
     lock(liblock)
@@ -5450,7 +5450,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_fapl_log']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga4e03be2fe83ed02b32266a6c81427beb).
 """
 function h5p_set_fapl_log(fapl_id, logfile, flags, buf_size)
     lock(liblock)
@@ -5468,7 +5468,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_fapl_multi']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga296bd22cc1e462351f8f0a00a46baf58).
 """
 function h5p_set_fapl_multi(fapl_id, memb_map, memb_fapl, memb_name, memb_addr, relax)
     lock(liblock)
@@ -5486,7 +5486,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_fapl_sec2']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/_h5_f_dsec2_8h.html#af581bceca36ad4eef3cd45b16eabbb20).
 """
 function h5p_set_fapl_sec2(fapl_id)
     lock(liblock)
@@ -5504,7 +5504,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_fapl_ros3']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#gaad28d8c24f236590193215c5ae7a8f18).
 """
 function h5p_set_fapl_ros3(fapl_id, fa)
     lock(liblock)
@@ -5522,7 +5522,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_fapl_split']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga502f1ad38f5143cf281df8282fef26ed).
 """
 function h5p_set_fapl_split(fapl, meta_ext, meta_plist_id, raw_ext, raw_plist_id)
     lock(liblock)
@@ -5540,7 +5540,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_fapl_splitter']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga49f386ea235bb48128e54c962c499f07).
 """
 function h5p_set_fapl_splitter(fapl_id, config_ptr)
     lock(liblock)
@@ -5558,7 +5558,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_fapl_stdio']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga77f0643117835e7f7992d573761b5052).
 """
 function h5p_set_fapl_stdio(fapl_id)
     lock(liblock)
@@ -5576,7 +5576,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_fapl_windows']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga0017f78e0f3de465621fde556f679830).
 """
 function h5p_set_fapl_windows(fapl_id)
     lock(liblock)
@@ -5594,7 +5594,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_fclose_degree']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga60e3567f677fd3ade75b909b636d7b9c).
 """
 function h5p_set_fclose_degree(plist_id, fc_degree)
     lock(liblock)
@@ -5612,7 +5612,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_file_image']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga31d0299f6ad287e013b2a02a8ccc1fa2).
 """
 function h5p_set_file_image(fapl_id, buf_ptr, buf_len)
     lock(liblock)
@@ -5630,7 +5630,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_file_image_callbacks']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga14ea3598215afd078b964b672b40d63c).
 """
 function h5p_set_file_image_callbacks(fapl_id, callbacks_ptr)
     lock(liblock)
@@ -5648,7 +5648,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_file_locking']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga503e9ff6121a67cf53f8b67054ed9391).
 """
 function h5p_set_file_locking(fapl_id, use_file_locking, ignore_when_disabled)
     lock(liblock)
@@ -5666,7 +5666,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_file_space']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_c_p_l.html#gad388f8cfa213762c6fc3e45619aa5db6).
 """
 function h5p_set_file_space(plist_id, strategy, threshold)
     lock(liblock)
@@ -5684,7 +5684,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_file_space_page_size']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_c_p_l.html#gad012d7f3c2f1e1999eb1770aae3a4963).
 """
 function h5p_set_file_space_page_size(plist_id, fsp_size)
     lock(liblock)
@@ -5702,7 +5702,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_file_space_strategy']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_c_p_l.html#ga167ff65f392ca3b7f1933b1cee1b9f70).
 """
 function h5p_set_file_space_strategy(plist_id, strategy, persist, threshold)
     lock(liblock)
@@ -5720,7 +5720,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_fill_time']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#ga6bd822266b31f86551a9a1d79601b6a2).
 """
 function h5p_set_fill_time(plist_id, fill_time)
     lock(liblock)
@@ -5738,7 +5738,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_fill_value']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#ga4335bb45b35386daa837b4ff1b9cd4a4).
 """
 function h5p_set_fill_value(plist_id, type_id, value)
     lock(liblock)
@@ -5756,7 +5756,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_filter']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___o_c_p_l.html#ga191c567ee50b2063979cdef156a768c5).
 """
 function h5p_set_filter(plist_id, filter_id, flags, cd_nelmts, cd_values)
     lock(liblock)
@@ -5774,7 +5774,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_filter_callback']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_x_p_l.html#ga1890e730c34efa20cd6a5d1d2a0e8caa).
 """
 function h5p_set_filter_callback(plist_id, func, op_data)
     lock(liblock)
@@ -5792,7 +5792,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_fletcher32']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___o_c_p_l.html#ga8bc81abfbd0393b0a46e121f817a3f81).
 """
 function h5p_set_fletcher32(plist_id)
     lock(liblock)
@@ -5810,7 +5810,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_gc_references']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga61f01a12d5392ccf1321168f3c28f36f).
 """
 function h5p_set_gc_references(fapl_id, gc_ref)
     lock(liblock)
@@ -5828,7 +5828,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_hyper_vector_size']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_x_p_l.html#gad8c1582c86e3316c70b0658b3b8e2071).
 """
 function h5p_set_hyper_vector_size(plist_id, size)
     lock(liblock)
@@ -5846,7 +5846,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_istore_k']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_c_p_l.html#ga84a72f59d17841c37ab34674bf22a10c).
 """
 function h5p_set_istore_k(plist_id, ik)
     lock(liblock)
@@ -5864,7 +5864,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_layout']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#ga75d80991a8f467e0d454c53a383ae7f9).
 """
 function h5p_set_layout(plist_id, setting)
     lock(liblock)
@@ -5882,7 +5882,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_libver_bounds']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#gacbe1724e7f70cd17ed687417a1d2a910).
 """
 function h5p_set_libver_bounds(fapl_id, low, high)
     lock(liblock)
@@ -5900,7 +5900,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_link_creation_order']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___g_c_p_l.html#ga24817b5c9553df3872de57c20bf11512).
 """
 function h5p_set_link_creation_order(plist_id, crt_order_flags)
     lock(liblock)
@@ -5918,7 +5918,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_link_phase_change']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___g_c_p_l.html#gab463ac9355728469eddfd973b4a5964f).
 """
 function h5p_set_link_phase_change(plist_id, max_compact, min_dense)
     lock(liblock)
@@ -5936,7 +5936,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_local_heap_size_hint']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___g_c_p_l.html#ga870728af2bf3c0b16edafd762a1c44d6).
 """
 function h5p_set_local_heap_size_hint(plist_id, size_hint)
     lock(liblock)
@@ -5954,7 +5954,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_mcdt_search_cb']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___o_c_p_y_p_l.html#ga9e0448885990a1b9ebd4493b7604f0c1).
 """
 function h5p_set_mcdt_search_cb(plist_id, func, op_data)
     lock(liblock)
@@ -5972,7 +5972,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_mdc_config']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#gaf234199ad4cf9c708f45893f7f9cd4d3).
 """
 function h5p_set_mdc_config(plist_id, config_ptr)
     lock(liblock)
@@ -5990,7 +5990,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_mdc_image_config']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga65cf9fea33d1324009efc2d5db848434).
 """
 function h5p_set_mdc_image_config(plist_id, config_ptr)
     lock(liblock)
@@ -6008,7 +6008,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_mdc_log_options']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga4d7206c5679d7243410058eceae59b2c).
 """
 function h5p_set_mdc_log_options(plist_id, is_enabled, location, start_on_access)
     lock(liblock)
@@ -6026,7 +6026,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_meta_block_size']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga8822e3dedc8e1414f20871a87d533cb1).
 """
 function h5p_set_meta_block_size(fapl_id, size)
     lock(liblock)
@@ -6044,7 +6044,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_metadata_read_attempts']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#gab827cef16ec569c87cec94a8b3f350c5).
 """
 function h5p_set_metadata_read_attempts(plist_id, attempts)
     lock(liblock)
@@ -6062,7 +6062,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_multi_type']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga507341f31848c57008a3225bff3fe128).
 """
 function h5p_set_multi_type(fapl_id, type)
     lock(liblock)
@@ -6080,7 +6080,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_nbit']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#gad58a9c0e766ef71d4075b2c2a755e91c).
 """
 function h5p_set_nbit(plist_id)
     lock(liblock)
@@ -6098,7 +6098,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_nlinks']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___l_a_p_l.html#gaa46c63c196a0cf5cd94dede039c030f4).
 """
 function h5p_set_nlinks(plist_id, nlinks)
     lock(liblock)
@@ -6116,7 +6116,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_obj_track_times']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___o_c_p_l.html#gafa87fab7ebb6c4a8da9a75a86cc62fa3).
 """
 function h5p_set_obj_track_times(plist_id, track_times)
     lock(liblock)
@@ -6134,7 +6134,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_object_flush_cb']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#gab4a4a788af5b6e88381dda0df2efbf19).
 """
 function h5p_set_object_flush_cb(plist_id, func, udata)
     lock(liblock)
@@ -6152,7 +6152,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_page_buffer_size']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga8008cddafa81bd1ddada23f6d9a161ca).
 """
 function h5p_set_page_buffer_size(plist_id, buf_size, min_meta_per, min_raw_per)
     lock(liblock)
@@ -6170,7 +6170,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_preserve']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_x_p_l.html#gae8b87209ba6a3943eb614b6dfe55e588).
 """
 function h5p_set_preserve(plist_id, status)
     lock(liblock)
@@ -6188,7 +6188,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_scaleoffset']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#ga5c10165b670e0e984db431aee818cc7e).
 """
 function h5p_set_scaleoffset(plist_id, scale_type, scale_factor)
     lock(liblock)
@@ -6206,7 +6206,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_shared_mesg_index']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_c_p_l.html#ga052aba0c1c5a3908a62335fc28e287ef).
 """
 function h5p_set_shared_mesg_index(plist_id, index_num, mesg_type_flags, min_mesg_size)
     lock(liblock)
@@ -6224,7 +6224,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_shared_mesg_nindexes']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_c_p_l.html#ga5e5020b1e2579da4617ea115e3cc50f1).
 """
 function h5p_set_shared_mesg_nindexes(plist_id, nindexes)
     lock(liblock)
@@ -6242,7 +6242,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_shared_mesg_phase_change']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_c_p_l.html#ga967f961f4002d63804dc67b3bcd8f354).
 """
 function h5p_set_shared_mesg_phase_change(plist_id, max_list, min_btree)
     lock(liblock)
@@ -6260,7 +6260,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_shuffle']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#ga31e09cb0bf2da2893eed8a72220e6521).
 """
 function h5p_set_shuffle(plist_id)
     lock(liblock)
@@ -6278,7 +6278,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_sieve_buf_size']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga24fd737955839194bf5605d5f47928ee).
 """
 function h5p_set_sieve_buf_size(fapl_id, size)
     lock(liblock)
@@ -6296,7 +6296,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_sizes']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_c_p_l.html#gae5eb3ba16f063d151d1b56d33e0710a9).
 """
 function h5p_set_sizes(plist_id, sizeof_addr, sizeof_size)
     lock(liblock)
@@ -6314,7 +6314,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_small_data_block_size']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga5a99962a79412814b79be830f14c23dd).
 """
 function h5p_set_small_data_block_size(fapl_id, size)
     lock(liblock)
@@ -6332,7 +6332,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_sym_k']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_c_p_l.html#ga444ca905f084f9f96b7fe60d2a8c8176).
 """
 function h5p_set_sym_k(plist_id, ik, lk)
     lock(liblock)
@@ -6350,7 +6350,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_szip']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#ga37de4b6071a94574cfab5cd6de9c3fc6).
 """
 function h5p_set_szip(plist_id, options_mask, pixels_per_block)
     lock(liblock)
@@ -6368,7 +6368,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_type_conv_cb']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_x_p_l.html#ga10a80b29444d933da1aa2003f46cf003).
 """
 function h5p_set_type_conv_cb(dxpl_id, op, operate_data)
     lock(liblock)
@@ -6386,7 +6386,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_userblock']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_c_p_l.html#ga403bd982a2976c932237b186ed1cff4d).
 """
 function h5p_set_userblock(plist_id, len)
     lock(liblock)
@@ -6404,7 +6404,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_virtual']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#gadec895092dbbedb94f85d9cacf8924f5).
 """
 function h5p_set_virtual(dcpl_id, vspace_id, src_file_name, src_dset_name, src_space_id)
     lock(liblock)
@@ -6422,7 +6422,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_virtual_prefix']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_a_p_l.html#ga6816e0de35a335f636922c3cd5569819).
 """
 function h5p_set_virtual_prefix(dapl_id, prefix)
     lock(liblock)
@@ -6440,7 +6440,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_virtual_printf_gap']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_a_p_l.html#ga8bb25e402e860133b8af3715e429bacf).
 """
 function h5p_set_virtual_printf_gap(dapl_id, gap_size)
     lock(liblock)
@@ -6458,7 +6458,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_virtual_view']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_a_p_l.html#gac65520e7cd7748f93d94c4a42abd01b4).
 """
 function h5p_set_virtual_view(dapl_id, view)
     lock(liblock)
@@ -6476,7 +6476,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_vlen_mem_manager']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_x_p_l.html#ga2220ab75de470b6a6d5b1173d12aa0cf).
 """
 function h5p_set_vlen_mem_manager(plist_id, alloc_func, alloc_info, free_func, free_info)
     lock(liblock)
@@ -6494,7 +6494,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pset_vol']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga8aaa97e70b2544c3d95d908e1ae5b0f0).
 """
 function h5p_set_vol(plist_id, new_vol_id, new_vol_info)
     lock(liblock)
@@ -6512,7 +6512,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Padd_merge_committed_dtype_path']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___o_c_p_y_p_l.html#gab89c9debe50afca848151ff046afc82f).
 """
 function h5p_add_merge_committed_dtype_path(plist_id, path)
     lock(liblock)
@@ -6530,7 +6530,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pall_filters_avail']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#ga70f5346250698afc950532e9593c3988).
 """
 function h5p_all_filters_avail(plist_id)
     lock(liblock)
@@ -6548,7 +6548,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pclose']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_l_c_r.html#ga5dce61149211d3ef319452aa598887fb).
 """
 function h5p_close(id)
     lock(liblock)
@@ -6566,7 +6566,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pclose_class']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_l_c_r_a.html#gaa7978af06720106af04b9d034e57fcfa).
 """
 function h5p_close_class(plist_id)
     lock(liblock)
@@ -6584,7 +6584,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pcopy']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_l_c_r.html#gad2663ccbcbf76b96cde4c104588ae21b).
 """
 function h5p_copy(plist_id)
     lock(liblock)
@@ -6602,7 +6602,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pcopy_prop']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_l_c_r_a.html#ga339a27b865cf2d57ff95a6b26e94a581).
 """
 function h5p_copy_prop(dst_id, src_id, name)
     lock(liblock)
@@ -6620,7 +6620,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pcreate']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_l_c_r.html#gaf1b11da01d4d45d788c45f8bc5f0cbfa).
 """
 function h5p_create(cls_id)
     lock(liblock)
@@ -6638,7 +6638,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pcreate_class']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_l_c_r_a.html#ga62a1119b6ad2c33bcc9149df5e24ae12).
 """
 function h5p_create_class(parent, name, create, create_data, copy, copy_data, close, close_data)
     lock(liblock)
@@ -6656,7 +6656,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pdecode']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_l_c_r.html#gafd75009eb96922e72beffa78718d4bdd).
 """
 function h5p_decode(buf)
     lock(liblock)
@@ -6674,7 +6674,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pencode1']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_l_c_r_a.html#gaf40518cb161ee9508da4b9c0d34553bf).
 """
 function h5p_encode(plist_id, buf, nalloc)
     lock(liblock)
@@ -6692,7 +6692,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pencode2']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_l_c_r.html#ga37b1b6666e62a86389015e7dfc384faa).
 """
 function h5p_encode(plist_id, buf, nalloc, fapl_id)
     lock(liblock)
@@ -6710,7 +6710,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pequal']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_l_c_r_a.html#ga9425ef9f3bc3ee661eca6be654aeae20).
 """
 function h5p_equal(id1, id2)
     lock(liblock)
@@ -6728,7 +6728,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pexist']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_l_c_r_a.html#gae135cf333c12375f3808cfe931ea9190).
 """
 function h5p_exist(plist_id, name)
     lock(liblock)
@@ -6746,7 +6746,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pfill_value_defined']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___d_c_p_l.html#ga14f9bc2a0d6f9e62ab95661fc1045ad6).
 """
 function h5p_fill_value_defined(plist, status)
     lock(liblock)
@@ -6764,7 +6764,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pfree_merge_committed_dtype_paths']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___o_c_p_y_p_l.html#ga4b8d6496ac56b167dba16729a8bd7adf).
 """
 function h5p_free_merge_committed_dtype_paths(plist_id)
     lock(liblock)
@@ -6782,7 +6782,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pinsert1']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_l_c_r_a.html#ga6ba9694c03ae97c9f514470366a909f9).
 """
 function h5p_insert(plist_id, name, size, value, prp_set, prp_get, prp_delete, prp_copy, prp_close)
     lock(liblock)
@@ -6800,7 +6800,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pinsert2']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_l_c_r_a.html#ga930e15d5f994e223bea80621ef3065d4).
 """
 function h5p_insert(plist_id, name, size, value, set, get, prp_del, copy, compare, close)
     lock(liblock)
@@ -6818,7 +6818,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pisa_class']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_l_c_r_a.html#ga68bc660e09b46dcb5ea3f25b245aff60).
 """
 function h5p_isa_class(plist_id, pclass_id)
     lock(liblock)
@@ -6836,7 +6836,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Piterate']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_l_c_r_a.html#ga1c52aa0f6d1839798982973d7db9569e).
 """
 function h5p_iterate(id, idx, iter_func, iter_data)
     lock(liblock)
@@ -6854,7 +6854,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pmodify_filter']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___o_c_p_l.html#ga12a358b3725a889c1768bbd2b5f541d8).
 """
 function h5p_modify_filter(plist_id, filter_id, flags, cd_nelmts, cd_values)
     lock(liblock)
@@ -6872,7 +6872,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pregister1']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_l_c_r_a.html#ga91799f6cda78911e9ecc2cfaaea3a3b5).
 """
 function h5p_register(cls_id, name, size, def_value, prp_create, prp_set, prp_get, prp_del, prp_copy, prp_close)
     lock(liblock)
@@ -6890,7 +6890,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Pregister2']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_l_c_r_a.html#gaac3f957a5d3cbb4adc8b7ba2aa5f1719).
 """
 function h5p_register(cls_id, name, size, def_value, create, set, get, prp_del, copy, compare, close)
     lock(liblock)
@@ -6908,7 +6908,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Premove']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_l_c_r_a.html#ga2bf026d42a7823e89b6070a4cafc284b).
 """
 function h5p_remove(plist_id, name)
     lock(liblock)
@@ -6926,7 +6926,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Premove_filter']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___o_c_p_l.html#gabffbf6d013c090fa052ac4bafce8e532).
 """
 function h5p_remove_filter(plist_id, filter_id)
     lock(liblock)
@@ -6944,7 +6944,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5P']/member[name='H5Punregister']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___p_l_c_r_a.html#gaefb44d3535e309ba4041e420f3712aea).
 """
 function h5p_unregister(pclass_id, name)
     lock(liblock)
@@ -6962,7 +6962,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5PL']/member[name='H5PLset_loading_state']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_p_l.html#ga3ee7276ca1168b175661db3866f8db0e).
 """
 function h5pl_set_loading_state(plugin_control_mask)
     lock(liblock)
@@ -6980,7 +6980,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5PL']/member[name='H5PLget_loading_state']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_p_l.html#gadde42938cf1cc41fa392e8719050b52a).
 """
 function h5pl_get_loading_state(plugin_control_mask)
     lock(liblock)
@@ -6998,7 +6998,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5PL']/member[name='H5PLappend']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_p_l.html#gac74200fdc02f794f3fae753fe8b850b0).
 """
 function h5pl_append(search_path)
     lock(liblock)
@@ -7016,7 +7016,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5PL']/member[name='H5PLprepend']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_p_l.html#ga1f2300ef2de6e430af330de7d194576f).
 """
 function h5pl_prepend(search_path)
     lock(liblock)
@@ -7034,7 +7034,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5PL']/member[name='H5PLreplace']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_p_l.html#gab0f8d4e8d0b81cb55cf8b9de5095dc0b).
 """
 function h5pl_replace(search_path, index)
     lock(liblock)
@@ -7052,7 +7052,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5PL']/member[name='H5PLinsert']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_p_l.html#gacc5153b0db6b3f876c3980bf34f931fc).
 """
 function h5pl_insert(search_path, index)
     lock(liblock)
@@ -7070,7 +7070,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5PL']/member[name='H5PLremove']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_p_l.html#gaa566196b7c6970c255feac4cf9f3bf40).
 """
 function h5pl_remove(index)
     lock(liblock)
@@ -7088,7 +7088,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5PL']/member[name='H5PLget']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_p_l.html#ga64a3c5450d91455624ecba582553d905).
 """
 function h5pl_get(index, path_buf, buf_size)
     lock(liblock)
@@ -7106,7 +7106,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5PL']/member[name='H5PLsize']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_p_l.html#ga30b799ad7e9645312ef8975a610b4b18).
 """
 function h5pl_size(num_paths)
     lock(liblock)
@@ -7124,7 +7124,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5R']/member[name='H5Rcreate']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_r.html#ga0ac6997b5de26b11d91a95de2869950d).
 """
 function h5r_create(ref, loc_id, pathname, ref_type, space_id)
     lock(liblock)
@@ -7142,7 +7142,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5R']/member[name='H5Rdereference2']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_r.html#ga9b09586f7b6ec708434dd8f95f58a9b7).
 """
 function h5r_dereference(obj_id, oapl_id, ref_type, ref)
     lock(liblock)
@@ -7160,7 +7160,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5R']/member[name='H5Rget_obj_type2']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_r.html#ga766e39a76bcdd68dc514425353eff807).
 """
 function h5r_get_obj_type(loc_id, ref_type, ref, obj_type)
     lock(liblock)
@@ -7178,7 +7178,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5R']/member[name='H5Rget_region']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_r.html#ga1702d609e85b9edd3d1e526a0276484f).
 """
 function h5r_get_region(loc_id, ref_type, ref)
     lock(liblock)
@@ -7196,7 +7196,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5S']/member[name='H5Sclose']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_s.html#ga2b53128a39c8f104c1c9c2a91590fcc1).
 """
 function h5s_close(space_id)
     lock(liblock)
@@ -7215,7 +7215,7 @@ end
 
     # External links
 
-    - [](@doxygen /tagfile/compound[name='H5S']/member[name='H5Scombine_select']).
+    - [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_s.html#ga356600d12d3cf0db53cc27b212d75b08).
     """
     function h5s_combine_select(space1_id, op, space2_id)
         lock(liblock)
@@ -7234,7 +7234,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5S']/member[name='H5Scopy']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_s.html#gae5e26a8f8191768a600d40ec518ed66b).
 """
 function h5s_copy(space_id)
     lock(liblock)
@@ -7252,7 +7252,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5S']/member[name='H5Screate']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_s.html#gabee514327cba34ca9951b24fa14fb083).
 """
 function h5s_create(class)
     lock(liblock)
@@ -7270,7 +7270,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5S']/member[name='H5Screate_simple']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_s.html#ga8e35eea5738b4805856eac7d595254ae).
 """
 function h5s_create_simple(rank, current_dims, maximum_dims)
     lock(liblock)
@@ -7288,7 +7288,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5S']/member[name='H5Sextent_equal']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_s.html#gae58bca0c154ceaed9ad36c58c78e145c).
 """
 function h5s_extent_equal(space1_id, space2_id)
     lock(liblock)
@@ -7306,7 +7306,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5S']/member[name='H5Sget_regular_hyperslab']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_s.html#gabc974bbc041538a1d3032729df2ddfc0).
 """
 function h5s_get_regular_hyperslab(space_id, start, stride, count, block)
     lock(liblock)
@@ -7324,7 +7324,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5S']/member[name='H5Sget_simple_extent_dims']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_s.html#gac494409b615d8e67c5edd9eb2848b2f3).
 """
 function h5s_get_simple_extent_dims(space_id, dims, maxdims)
     lock(liblock)
@@ -7342,7 +7342,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5S']/member[name='H5Sget_simple_extent_ndims']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_s.html#gae5282a81692b80b5b19dd12d05b9b28e).
 """
 function h5s_get_simple_extent_ndims(space_id)
     lock(liblock)
@@ -7360,7 +7360,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5S']/member[name='H5Sget_simple_extent_type']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_s.html#gaf63af02b385e80c8c10b1c43763c251f).
 """
 function h5s_get_simple_extent_type(space_id)
     lock(liblock)
@@ -7378,7 +7378,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5S']/member[name='H5Sget_select_hyper_nblocks']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_s.html#gad873b2f3b82ee8c426c26ceeb1c67f86).
 """
 function h5s_get_select_hyper_nblocks(space_id)
     lock(liblock)
@@ -7396,7 +7396,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5S']/member[name='H5Sget_select_npoints']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_s.html#ga1a44dde97206f40f366f99d9c39b6046).
 """
 function h5s_get_select_npoints(space_id)
     lock(liblock)
@@ -7414,7 +7414,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5S']/member[name='H5Sget_select_type']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_s.html#ga51ae555e5b2492d95c7fefab2e0d5018).
 """
 function h5s_get_select_type(space_id)
     lock(liblock)
@@ -7432,7 +7432,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5S']/member[name='H5Sis_regular_hyperslab']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_s.html#ga8a5bc33fae4be442093329f2cfec3f49).
 """
 function h5s_is_regular_hyperslab(space_id)
     lock(liblock)
@@ -7450,7 +7450,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5S']/member[name='H5Sis_simple']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_s.html#gab0b1560f7c8402986f332522e2adae1d).
 """
 function h5s_is_simple(space_id)
     lock(liblock)
@@ -7468,7 +7468,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5S']/member[name='H5Sselect_hyperslab']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_s.html#ga6adfdf1b95dc108a65bf66e97d38536d).
 """
 function h5s_select_hyperslab(dspace_id, seloper, start, stride, count, block)
     lock(liblock)
@@ -7486,7 +7486,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5S']/member[name='H5Sset_extent_simple']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_s.html#gaf2526a41d2f4506e2c52098510517343).
 """
 function h5s_set_extent_simple(dspace_id, rank, current_size, maximum_size)
     lock(liblock)
@@ -7504,7 +7504,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tarray_create2']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___a_r_r_a_y.html#ga9d9aea590106fdab7a2c07c04346f618).
 """
 function h5t_array_create(basetype_id, ndims, sz)
     lock(liblock)
@@ -7522,7 +7522,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tclose']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_t.html#gafcba4db244f6a4d71e99c6e72b8678f0).
 """
 function h5t_close(dtype_id)
     lock(liblock)
@@ -7540,7 +7540,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tcommitted']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_t.html#ga0eba38d8c49784269e71ac9fa79b0f0a).
 """
 function h5t_committed(dtype_id)
     lock(liblock)
@@ -7558,7 +7558,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tcommit2']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_t.html#ga10352b6fa9ac58a7fbd5299496f1df31).
 """
 function h5t_commit(loc_id, name, dtype_id, lcpl_id, tcpl_id, tapl_id)
     lock(liblock)
@@ -7576,7 +7576,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tcopy']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_t.html#gaec07efbab84f4e5b4ed22f010786be8e).
 """
 function h5t_copy(dtype_id)
     lock(liblock)
@@ -7594,7 +7594,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tcreate']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_t.html#gaa9afc38e1a7d35e4d0bec24c569b3c65).
 """
 function h5t_create(class_id, sz)
     lock(liblock)
@@ -7612,7 +7612,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tenum_insert']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___e_n_u_m.html#ga7bbddcff3a5d18ee983fbe5654fdc41f).
 """
 function h5t_enum_insert(dtype_id, name, value)
     lock(liblock)
@@ -7630,7 +7630,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tequal']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_t.html#gaa92250f289b557b63cba974defa20b0f).
 """
 function h5t_equal(dtype_id1, dtype_id2)
     lock(liblock)
@@ -7648,7 +7648,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tget_array_dims2']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___a_r_r_a_y.html#ga3ea18a56f03d3b9c8f3ff4091c784769).
 """
 function h5t_get_array_dims(dtype_id, dims)
     lock(liblock)
@@ -7666,7 +7666,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tget_array_ndims']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___a_r_r_a_y.html#gadec89de23da8efaba4677abfd818a9c0).
 """
 function h5t_get_array_ndims(dtype_id)
     lock(liblock)
@@ -7684,7 +7684,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tget_class']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_t.html#ga364545c053f925fec65880b235e37898).
 """
 function h5t_get_class(dtype_id)
     lock(liblock)
@@ -7702,7 +7702,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tget_cset']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___a_t_o_m.html#ga5bc2f3e8f708f5bcdd0d8667950310c1).
 """
 function h5t_get_cset(dtype_id)
     lock(liblock)
@@ -7720,7 +7720,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tget_ebias']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___a_t_o_m.html#ga302b1c22cc6007ca69724a9e387e3888).
 """
 function h5t_get_ebias(dtype_id)
     lock(liblock)
@@ -7738,7 +7738,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tget_fields']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___a_t_o_m.html#ga42e62cb497fdec8f08cb9ac3c6de0e14).
 """
 function h5t_get_fields(dtype_id, spos, epos, esize, mpos, msize)
     lock(liblock)
@@ -7756,7 +7756,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tget_member_class']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___c_o_m_p_o_u_n_d.html#gac8476d164fb972fbf7b8c4584b8e916b).
 """
 function h5t_get_member_class(dtype_id, index)
     lock(liblock)
@@ -7774,7 +7774,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tget_member_index']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___c_o_m_p_e_n_u_m.html#gabe31b13b2b8bf29d1a4c3b04cf917c6c).
 """
 function h5t_get_member_index(dtype_id, membername)
     lock(liblock)
@@ -7792,7 +7792,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tget_member_offset']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___c_o_m_p_o_u_n_d.html#ga46cf2a60b54a08695635749c215af4af).
 """
 function h5t_get_member_offset(dtype_id, index)
     lock(liblock)
@@ -7810,7 +7810,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tget_member_type']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___c_o_m_p_o_u_n_d.html#gaf5de0eabe28246f040342e275b9a63eb).
 """
 function h5t_get_member_type(dtype_id, index)
     lock(liblock)
@@ -7828,7 +7828,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tget_native_type']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_t.html#ga05b99133058637e8daa5d745381ddd3d).
 """
 function h5t_get_native_type(dtype_id, direction)
     lock(liblock)
@@ -7846,7 +7846,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tget_nmembers']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___c_o_m_p_e_n_u_m.html#ga21bdfc706f71ebe298a433e74b5bc626).
 """
 function h5t_get_nmembers(dtype_id)
     lock(liblock)
@@ -7864,7 +7864,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tget_offset']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___a_t_o_m.html#ga225f0b6d173f90d3696bb68b88ae07c1).
 """
 function h5t_get_offset(dtype_id)
     lock(liblock)
@@ -7882,7 +7882,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tget_order']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___a_t_o_m.html#gaeb5bd7ec46787a4b6d33947dc73c2a5f).
 """
 function h5t_get_order(dtype_id)
     lock(liblock)
@@ -7900,7 +7900,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tget_precision']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___a_t_o_m.html#gaac9f5410c8cf456f048011030b7f90f9).
 """
 function h5t_get_precision(dtype_id)
     lock(liblock)
@@ -7918,7 +7918,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tget_sign']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___a_t_o_m.html#ga636f7655e706ccf7a3f23566ca561e90).
 """
 function h5t_get_sign(dtype_id)
     lock(liblock)
@@ -7936,7 +7936,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tget_size']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_t.html#ga1b971589cd7a86f3e84affdee455564e).
 """
 function h5t_get_size(dtype_id)
     lock(liblock)
@@ -7954,7 +7954,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tget_strpad']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___a_t_o_m.html#ga564b21cc269467c39f59462feb0d5903).
 """
 function h5t_get_strpad(dtype_id)
     lock(liblock)
@@ -7972,7 +7972,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tget_super']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_t.html#ga331e8f7b388a50af77294018db788de3).
 """
 function h5t_get_super(dtype_id)
     lock(liblock)
@@ -7990,7 +7990,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tinsert']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___c_o_m_p_o_u_n_d.html#ga487d8f64a76f48b6eeb7f402d3b8b081).
 """
 function h5t_insert(dtype_id, fieldname, offset, field_id)
     lock(liblock)
@@ -8008,7 +8008,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tis_variable_str']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___a_t_o_m.html#gac16f1dd88eda4bc5ae5b325809dc2bee).
 """
 function h5t_is_variable_str(type_id)
     lock(liblock)
@@ -8026,7 +8026,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tlock']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_t.html#ga523642dbf4c60a83127fff87664a965b).
 """
 function h5t_lock(type_id)
     lock(liblock)
@@ -8044,7 +8044,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Topen2']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_t.html#ga7e65e77634f1fb4ba38cbcdab9a59bc2).
 """
 function h5t_open(loc_id, name, tapl_id)
     lock(liblock)
@@ -8062,7 +8062,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tset_cset']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___a_t_o_m.html#ga4909c0c3d97c3d212fee032cc8dc031a).
 """
 function h5t_set_cset(dtype_id, cset)
     lock(liblock)
@@ -8080,7 +8080,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tset_ebias']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___a_t_o_m.html#gad2c4a8f09672f4166f39efe83d44dba2).
 """
 function h5t_set_ebias(dtype_id, ebias)
     lock(liblock)
@@ -8098,7 +8098,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tset_fields']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___a_t_o_m.html#gafbdc98b45749e5cfbaf1a8689f3c403d).
 """
 function h5t_set_fields(dtype_id, spos, epos, esize, mpos, msize)
     lock(liblock)
@@ -8116,7 +8116,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tset_offset']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___a_t_o_m.html#gafd22e4b0aecbe6dad9a899c5bf567e2f).
 """
 function h5t_set_offset(dtype_id, offset)
     lock(liblock)
@@ -8134,7 +8134,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tset_order']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___a_t_o_m.html#gab1aab76b1214a819281f2156c6d45d71).
 """
 function h5t_set_order(dtype_id, order)
     lock(liblock)
@@ -8152,7 +8152,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tset_precision']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___a_t_o_m.html#gab0f4dccfc2fb47bf2c7e06c9bf84c1f7).
 """
 function h5t_set_precision(dtype_id, sz)
     lock(liblock)
@@ -8170,7 +8170,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tset_size']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_t.html#gae5f38bfd4a4c557496b3194b5180212c).
 """
 function h5t_set_size(dtype_id, sz)
     lock(liblock)
@@ -8188,7 +8188,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tset_strpad']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___a_t_o_m.html#gaec9ebf44e766cc5b932d0bf26dcf8700).
 """
 function h5t_set_strpad(dtype_id, sz)
     lock(liblock)
@@ -8206,7 +8206,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tset_tag']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___o_p_a_q_u_e.html#ga3543ad909983a2a20e651d16502de43d).
 """
 function h5t_set_tag(dtype_id, tag)
     lock(liblock)
@@ -8224,7 +8224,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5T']/member[name='H5Tvlen_create']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___v_l_e_n.html#ga6841355fa5b3c924876b121dedb8ed2f).
 """
 function h5t_vlen_create(base_type_id)
     lock(liblock)
@@ -8242,7 +8242,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5DO']/member[name='H5DOappend']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d_o.html#ga316caac160af15192e0c78228667341e).
 """
 function h5do_append(dset_id, dxpl_id, index, num_elem, memtype, buffer)
     lock(liblock)
@@ -8260,7 +8260,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5DO']/member[name='H5DOwrite_chunk']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d_o.html#gabc3c07ed2cf29dd34035194919fbeb31).
 """
 function h5do_write_chunk(dset_id, dxpl_id, filter_mask, offset, bufsize, buf)
     lock(liblock)
@@ -8278,7 +8278,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5DS']/member[name='H5DSattach_scale']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d_s.html#ga4149785cd62520d6fc2736489f74e296).
 """
 function h5ds_attach_scale(did, dsid, idx)
     lock(liblock)
@@ -8296,7 +8296,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5DS']/member[name='H5DSdetach_scale']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d_s.html#gac94c498a5f8fc38b0619307f2ac1593a).
 """
 function h5ds_detach_scale(did, dsid, idx)
     lock(liblock)
@@ -8314,7 +8314,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5DS']/member[name='H5DSget_label']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d_s.html#gaaefa5dcd96a7dba034764b70e2f3aa38).
 """
 function h5ds_get_label(did, idx, label, size)
     lock(liblock)
@@ -8332,7 +8332,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5DS']/member[name='H5DSget_num_scales']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d_s.html#gaa373f8cb78fa2014c50fe8e3dd85ea90).
 """
 function h5ds_get_num_scales(did, idx)
     lock(liblock)
@@ -8350,7 +8350,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5DS']/member[name='H5DSget_scale_name']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d_s.html#ga81de6ce31478c7bc3a9f80b8c600170a).
 """
 function h5ds_get_scale_name(did, name, size)
     lock(liblock)
@@ -8368,7 +8368,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5DS']/member[name='H5DSis_attached']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d_s.html#ga76884eddb41d52adf4eb3278c135bbe4).
 """
 function h5ds_is_attached(did, dsid, idx)
     lock(liblock)
@@ -8386,7 +8386,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5DS']/member[name='H5DSis_scale']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d_s.html#ga06f897270fe32408f40bba69c747fc6b).
 """
 function h5ds_is_scale(did)
     lock(liblock)
@@ -8404,7 +8404,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5DS']/member[name='H5DSset_label']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d_s.html#gaf3810cf2fde9e8d06d8151a879e081b2).
 """
 function h5ds_set_label(did, idx, label)
     lock(liblock)
@@ -8422,7 +8422,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5DS']/member[name='H5DSset_scale']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_d_s.html#ga508a06962e9fc11dff32ed356e0a71fa).
 """
 function h5ds_set_scale(dsid, dimname)
     lock(liblock)
@@ -8440,7 +8440,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5LT']/member[name='H5LTdtype_to_text']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_l_t.html#ga6ec5b6204c4cddc5bd323918e51755dc).
 """
 function h5lt_dtype_to_text(datatype, str, lang_type, len)
     lock(liblock)
@@ -8458,7 +8458,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5TB']/member[name='H5TBappend_records']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_t_b.html#ga86f4907fb623ca561df39028dad83201).
 """
 function h5tb_append_records(loc_id, dset_name, nrecords, type_size, field_offset, field_sizes, data)
     lock(liblock)
@@ -8476,7 +8476,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5TB']/member[name='H5TBget_field_info']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_t_b.html#gaa0f9db05008cec2c37de8487531000ba).
 """
 function h5tb_get_field_info(loc_id, table_name, field_names, field_sizes, field_offsets, type_size)
     lock(liblock)
@@ -8494,7 +8494,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5TB']/member[name='H5TBget_table_info']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_t_b.html#ga35c13910216330ca1768396ac7ecd99c).
 """
 function h5tb_get_table_info(loc_id, table_name, nfields, nrecords)
     lock(liblock)
@@ -8512,7 +8512,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5TB']/member[name='H5TBmake_table']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_t_b.html#gacce384a15825421d1bddfc7b3ab1e7d0).
 """
 function h5tb_make_table(table_title, loc_id, dset_name, nfields, nrecords, type_size, field_names, field_offset, field_types, chunk_size, fill_data, compress, data)
     lock(liblock)
@@ -8530,7 +8530,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5TB']/member[name='H5TBread_records']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_t_b.html#ga597aa39196582e086ebb6ff60abcd3fc).
 """
 function h5tb_read_records(loc_id, table_name, start, nrecords, type_size, field_offsets, dst_sizes, data)
     lock(liblock)
@@ -8548,7 +8548,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5TB']/member[name='H5TBread_table']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_t_b.html#gae3f29b60e32a09a4d6c7bae56374a3bb).
 """
 function h5tb_read_table(loc_id, table_name, dst_size, dst_offset, dst_sizes, dst_buf)
     lock(liblock)
@@ -8566,7 +8566,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5TB']/member[name='H5TBwrite_records']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_t_b.html#ga04c5ef340c562ff96bff16d222c5677e).
 """
 function h5tb_write_records(loc_id, table_name, start, nrecords, type_size, field_offsets, field_sizes, data)
     lock(liblock)
@@ -8584,7 +8584,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5Z']/member[name='H5Zregister']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_z.html#ga93145acc38c2c60d832b7a9b0123706b).
 """
 function h5z_register(filter_class)
     lock(liblock)
@@ -8602,7 +8602,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5Z']/member[name='H5Zunregister']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_z.html#ga6b8bcdde70c9256c50c7c62ba66380f8).
 """
 function h5z_unregister(id)
     lock(liblock)
@@ -8620,7 +8620,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5Z']/member[name='H5Zfilter_avail']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_z.html#ga3594e10d70739ccda55ebb55b17b50ee).
 """
 function h5z_filter_avail(id)
     lock(liblock)
@@ -8638,7 +8638,7 @@ end
 
 # External links
 
-- [](@doxygen /tagfile/compound[name='H5Z']/member[name='H5Zget_filter_info']).
+- [](https://docs.hdfgroup.org/hdf5/v1_14/group___h5_z.html#ga9ef800ceec249c8819492545def9adba).
 """
 function h5z_get_filter_info(filter, filter_config_flags)
     lock(liblock)
@@ -8654,7 +8654,7 @@ end
 """
     h5fd_core_init() -> hid_t
 
-This function is exposed in `libhdf5` as the macro `H5FD_CORE`. See `libhdf5` documentation for [`H5Pget_driver`](https://portal.hdfgroup.org/display/HDF5/H5P_GET_DRIVER).
+This function is exposed in `libhdf5` as the macro `H5FD_CORE`. See `libhdf5` documentation for [`H5Pget_driver`](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga43a733fe9723dd15f5ad7abda909a1b8).
 """
 function h5fd_core_init()
     lock(liblock)
@@ -8670,7 +8670,7 @@ end
 """
     h5fd_family_init() -> hid_t
 
-This function is exposed in `libhdf5` as the macro `H5FD_FAMILY`. See `libhdf5` documentation for [`H5Pget_driver`](https://portal.hdfgroup.org/display/HDF5/H5P_GET_DRIVER).
+This function is exposed in `libhdf5` as the macro `H5FD_FAMILY`. See `libhdf5` documentation for [`H5Pget_driver`](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga43a733fe9723dd15f5ad7abda909a1b8).
 """
 function h5fd_family_init()
     lock(liblock)
@@ -8686,7 +8686,7 @@ end
 """
     h5fd_log_init() -> hid_t
 
-This function is exposed in `libhdf5` as the macro `H5FD_LOG`. See `libhdf5` documentation for [`H5Pget_driver`](https://portal.hdfgroup.org/display/HDF5/H5P_GET_DRIVER).
+This function is exposed in `libhdf5` as the macro `H5FD_LOG`. See `libhdf5` documentation for [`H5Pget_driver`](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga43a733fe9723dd15f5ad7abda909a1b8).
 """
 function h5fd_log_init()
     lock(liblock)
@@ -8702,7 +8702,7 @@ end
 """
     h5fd_mpio_init() -> hid_t
 
-This function is exposed in `libhdf5` as the macro `H5FD_MPIO`. See `libhdf5` documentation for [`H5Pget_driver`](https://portal.hdfgroup.org/display/HDF5/H5P_GET_DRIVER).
+This function is exposed in `libhdf5` as the macro `H5FD_MPIO`. See `libhdf5` documentation for [`H5Pget_driver`](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga43a733fe9723dd15f5ad7abda909a1b8).
 """
 function h5fd_mpio_init()
     lock(liblock)
@@ -8718,7 +8718,7 @@ end
 """
     h5fd_multi_init() -> hid_t
 
-This function is exposed in `libhdf5` as the macro `H5FD_MULTI`. See `libhdf5` documentation for [`H5Pget_driver`](https://portal.hdfgroup.org/display/HDF5/H5P_GET_DRIVER).
+This function is exposed in `libhdf5` as the macro `H5FD_MULTI`. See `libhdf5` documentation for [`H5Pget_driver`](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga43a733fe9723dd15f5ad7abda909a1b8).
 """
 function h5fd_multi_init()
     lock(liblock)
@@ -8734,7 +8734,7 @@ end
 """
     h5fd_sec2_init() -> hid_t
 
-This function is exposed in `libhdf5` as the macro `H5FD_SEC2`. See `libhdf5` documentation for [`H5Pget_driver`](https://portal.hdfgroup.org/display/HDF5/H5P_GET_DRIVER).
+This function is exposed in `libhdf5` as the macro `H5FD_SEC2`. See `libhdf5` documentation for [`H5Pget_driver`](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga43a733fe9723dd15f5ad7abda909a1b8).
 """
 function h5fd_sec2_init()
     lock(liblock)
@@ -8750,7 +8750,7 @@ end
 """
     h5fd_stdio_init() -> hid_t
 
-This function is exposed in `libhdf5` as the macro `H5FD_STDIO`. See `libhdf5` documentation for [`H5Pget_driver`](https://portal.hdfgroup.org/display/HDF5/H5P_GET_DRIVER).
+This function is exposed in `libhdf5` as the macro `H5FD_STDIO`. See `libhdf5` documentation for [`H5Pget_driver`](https://docs.hdfgroup.org/hdf5/v1_14/group___f_a_p_l.html#ga43a733fe9723dd15f5ad7abda909a1b8).
 """
 function h5fd_stdio_init()
     lock(liblock)

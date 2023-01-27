@@ -17,7 +17,7 @@ findall("/tagfile/compound[title='The HDF5 Data Model and File Structure']/docan
 
 =#
 
-function doxygen_url(node)
+function doxygen_url(node::EzXML.Node)
     baseurl = "https://docs.hdfgroup.org/hdf5/v1_14"
     if node.name == "compound"
         filename = findfirst("filename", node).content
@@ -36,6 +36,16 @@ function doxygen_url(node)
     else
         return "$baseurl/$filename#$anchor"
     end
+end
+
+function doxygen_url(xpath::String)
+    node = findfirst(xpath, tagdoc)
+    if !isnothing(node)
+        return doxygen_url(node)
+    else
+        @warn "No node for $xpath"
+    end
+    return ""
 end
 
 function doxygen_title(node)

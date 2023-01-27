@@ -228,11 +228,12 @@ function _bind(__module__, __source__, sig::Expr, err::Union{String,Expr,Nothing
         docstr *=
             "\n\nThis function is exposed in `libhdf5` as the macro `H5FD_$(uppercase(drivername))`. " *
             "See `libhdf5` documentation for [`H5Pget_driver`]" *
-            "(https://portal.hdfgroup.org/display/HDF5/H5P_GET_DRIVER).\n"
+            "($(doxygen_url("//member[name='H5Pget_driver']"))).\n"
     else
         groupname = uppercase(prefix)
         docstr *=
-            "\n\n# External links\n\n- [](@doxygen /tagfile/compound[name='$groupname']/member[name='$cfuncname']).\n"
+#            "\n\n# External links\n\n- []($(doxygen_url("/tagfile/compound[starts-with(name, '$groupname')]/member[name='$cfuncname']"))).\n"
+            "\n\n# External links\n\n- []($(doxygen_url("//member[name='$cfuncname']"))).\n"
     end
     # Then assemble the pieces. Doing it through explicit Expr() objects
     # avoids inserting the line number nodes for the macro --- the call site

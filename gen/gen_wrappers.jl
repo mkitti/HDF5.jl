@@ -1,6 +1,7 @@
 # Generate ../src/api/functions.jl
 # Run `julia --project=.. gen_wrappers.jl`` to execute this script
 
+include(joinpath(@__DIR__, "../docs/doxygen.jl"))
 include(joinpath(@__DIR__, "bind_generator.jl"))
 
 # Read in the API definition macros from the definitions file
